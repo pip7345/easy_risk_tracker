@@ -1,0 +1,255 @@
+/**
+ * Easy Risk Tracker - Custom CSS
+ * Risk assessment color scheme and styling
+ */
+
+/* Risk tier color variables */
+:root {
+  --ert-critical: #dc2626;
+  --ert-critical-bg: #fef2f2;
+  --ert-high: #f97316;
+  --ert-high-bg: #fff7ed;
+  --ert-moderate: #eab308;
+  --ert-moderate-bg: #fefce8;
+  --ert-low: #22c55e;
+  --ert-low-bg: #f0fdf4;
+  
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  --ert-critical-bg: #450a0a;
+  --ert-high-bg: #431407;
+  --ert-moderate-bg: #422006;
+  --ert-low-bg: #052e16;
+}
+
+/* Risk tier badge styling */
+.risk-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.risk-critical {
+  background-color: var(--ert-critical);
+  color: white;
+}
+
+.risk-high {
+  background-color: var(--ert-high);
+  color: white;
+}
+
+.risk-moderate {
+  background-color: var(--ert-moderate);
+  color: black;
+}
+
+.risk-low {
+  background-color: var(--ert-low);
+  color: white;
+}
+
+/* Score display cards */
+.score-card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.score-card h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.score-card .score-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Category scores grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.category-item {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.category-item .category-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.category-item .category-score {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.category-item .category-weight {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-500);
+}
+
+/* Red flags section */
+.red-flags {
+  background-color: var(--ert-critical-bg);
+  border: 1px solid var(--ert-critical);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.red-flags h3 {
+  color: var(--ert-critical);
+  margin-top: 0;
+}
+
+.red-flags ul {
+  margin-bottom: 0;
+}
+
+/* Improvement steps section */
+.improvements {
+  background-color: var(--ert-low-bg);
+  border: 1px solid var(--ert-low);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.improvements h3 {
+  color: var(--ert-low);
+  margin-top: 0;
+}
+
+/* Scores table styling */
+.scores-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scores-table th,
+.scores-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.scores-table th {
+  background-color: var(--ifm-background-surface-color);
+  font-weight: 600;
+}
+
+.scores-table tr:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Progress bar for scores */
+.score-bar {
+  height: 8px;
+  background-color: var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.score-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.score-bar-fill.critical {
+  background-color: var(--ert-critical);
+}
+
+.score-bar-fill.high {
+  background-color: var(--ert-high);
+}
+
+.score-bar-fill.moderate {
+  background-color: var(--ert-moderate);
+}
+
+.score-bar-fill.low {
+  background-color: var(--ert-low);
+}
+
+/* Alert boxes */
+.alert-critical {
+  background-color: var(--ert-critical-bg);
+  border-left: 4px solid var(--ert-critical);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.alert-warning {
+  background-color: var(--ert-high-bg);
+  border-left: 4px solid var(--ert-high);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.alert-info {
+  background-color: var(--ert-moderate-bg);
+  border-left: 4px solid var(--ert-moderate);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.alert-success {
+  background-color: var(--ert-low-bg);
+  border-left: 4px solid var(--ert-low);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .scores-table {
+    font-size: 0.875rem;
+  }
+  
+  .scores-table th,
+  .scores-table td {
+    padding: 0.5rem;
+  }
+}
