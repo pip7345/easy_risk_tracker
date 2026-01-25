@@ -11,6 +11,9 @@ This document outlines the comprehensive methodology used to assess cryptocurren
 
 The Easy Risk Tracker uses an **8-category weighted scoring system** that evaluates projects on a 0-10 scale. The final risk score is calculated as a weighted average, with additional consideration for critical red flags that may trigger automatic risk tier upgrades.
 
+**Important Note on iiZR Admin Tags:**
+The “Admin” or named person shown in the iiZR scraped pages may be a **platform analyst** who posts updates, not the project’s leadership. Leadership scores are based on **verifiable project team information**, not iiZR analyst names.
+
 ---
 
 ## Scoring Categories
@@ -228,9 +231,9 @@ Final Score = (Leadership × 0.15) + (Tokenomics × 0.15) + (Earning × 0.10) +
 When data is unavailable for a category:
 
 1. **External research** is attempted to gather information
-2. If data remains unavailable, the category is marked **N/A**
-3. N/A categories are **excluded from calculation** and weights are redistributed proportionally
-4. Multiple N/A categories (>3) result in an automatic **Moderate Risk** floor
+2. If a specific sub-criterion remains unavailable, it is marked **N/A** and explicitly justified
+3. The **category score is still assigned** using comparable indicators (e.g., service-model substitutes for tokenomics)
+4. If too much information is missing, we apply **conservative scores** and flag transparency as a major risk
 5. All N/A entries must be **justified** in the project report
 
 ---
