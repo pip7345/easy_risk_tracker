@@ -4,20 +4,30 @@ title: Project Risk Scores Overview
 slug: /
 ---
 
-# 📊 Easy Risk Tracker - Project Assessments
+# Easy Risk Tracker
 
-Welcome to the Easy Risk Tracker comprehensive project risk assessment database. This resource provides detailed analysis of cryptocurrency and Web3 projects using our standardized 8-category scoring methodology.
+Comprehensive investment risk analysis with our 8-category scoring system. Each project gets evaluated across leadership credibility, tokenomics, earning mechanisms, liquidity, community health, technical foundation, transparency, and your personal risk exposure - all scored 0-10.
 
-## Risk Tier Classification
+## Leadership Credibility
+Track record & transparency
 
-| Tier | Score Range | Description |
-|------|-------------|-------------|
-| 🟢 **Low Risk** | 7.5 - 10.0 | Strong fundamentals, transparent operations, minimal red flags |
-| 🟡 **Moderate Risk** | 6.0 - 7.4 | Generally sound with some concerns requiring monitoring |
-| 🟠 **High Risk** | 4.0 - 5.9 | Significant concerns present, proceed with extreme caution |
-| 🔴 **Critical Risk** | 0.0 - 3.9 | Severe red flags, potential fraud indicators, avoid |
+## Tokenomics & Utility
+Real use case analysis
 
----
+## Liquidity & Access
+Exit strategy assessment
+
+## Community Health
+Cult vs community detection
+
+## 8-Category Scoring
+Comprehensive 0-10 risk scores across all categories
+
+## Personal Risk Profile
+Assess your exposure and liquidity needs
+
+## Real-time Monitoring
+Continuous tracking of all risk factors
 
 ## 📋 All Project Scores
 
@@ -59,22 +69,45 @@ Welcome to the Easy Risk Tracker comprehensive project risk assessment database.
 
 ---
 
-## 🎯 Scoring Methodology Summary
+## 📊 Detailed Category Scores
 
-Each project is evaluated across **8 weighted categories**:
+The table below shows all 7 category scores (0-10 scale) for each project. Personal Risk Profile is excluded as it's user-specific. Category weights: Leadership (15%), Tokenomics (15%), Earning (10%), Liquidity (20%), Community (10%), Technical (15%), Transparency (10%).
 
-| Category | Weight | Focus Areas |
-|----------|--------|-------------|
-| Leadership & Team | 15% | Identity verification, experience, track record |
-| Tokenomics | 15% | Distribution, utility, supply mechanisms |
-| Earning Mechanism | 10% | Revenue source legitimacy, sustainability |
-| Liquidity & Market | 20% | Trading volume, exchange listings, price stability |
-| Community & Reputation | 10% | Engagement authenticity, reviews, warnings |
-| Technical Quality | 15% | Code audits, security, innovation |
-| Transparency | 10% | Documentation, communication, financial disclosure |
-| Personal Assessment | 5% | Investment thesis, risk tolerance alignment |
-
-[📋 View Full Methodology](methodology)
+| Project | Leadership | Tokenomics | Earning | Liquidity | Community | Technical | Transparency |
+|---------|------------|-----------|---------|----------|-----------|----------|--------------|
+| [Bellator](projects/bellator) | 2.0 | 2.5 | 1.5 | 3.0 | 3.5 | 3.0 | 2.5 |
+| [XUSD X1](projects/xusd_x1) | 0.0 | 1.0 | 0.5 | 0.0 | 1.0 | 0.5 | 0.5 |
+| [Gradient](projects/gradient) | 5.0 | 5.5 | 6.5 | 6.0 | 7.0 | 7.5 | 6.5 |
+| [Grass](projects/grass) | 6.0 | 7.0 | 7.5 | 7.5 | 7.5 | 7.0 | 7.0 |
+| [Uprock](projects/uprock) | 5.0 | 6.5 | 6.5 | 7.0 | 7.5 | 6.5 | 6.5 |
+| [Silencio](projects/silencio) | 5.5 | 6.5 | 7.5 | 6.5 | 7.5 | 7.0 | 6.5 |
+| [Tangem](projects/tangem) | 8.5 | N/A | N/A | 8.0 | 7.5 | 8.5 | 7.5 |
+| [DeNet](projects/denet) | 5.0 | 5.5 | 6.5 | 5.5 | 6.5 | 7.0 | 6.5 |
+| [Kast Card](projects/kast_card) | 4.5 | 5.5 | 6.75 | 6.25 | 6.5 | 6.0 | 7.0 |
+| [Builder](projects/builder) | 1.5 | 2.5 | 2.0 | 1.75 | 2.5 | 3.0 | 1.7 |
+| [Atleta Network](projects/atleta_network) | 5.0 | 6.5 | 6.0 | 6.5 | 6.5 | 7.0 | 6.5 |
+| [Blockchain Sports](projects/blockchain_sports_ecosystem) | 6.5 | 6.0 | 5.5 | 6.0 | 6.5 | 6.8 | 6.0 |
+| [Amplivio Corsair](projects/amplivio_corsair) | 5.0 | 4.0 | 3.0 | 4.0 | 5.0 | 5.0 | 6.0 |
+| [ZPLN](projects/zpln) | 1.75 | 4.0 | 4.5 | 3.5 | 4.75 | 3.5 | 5.25 |
+| [Texit](projects/texit) | 2.0 | 3.5 | 4.0 | 2.0 | 3.8 | 3.75 | 3.25 |
+| [WeFi](projects/wefi) | 6.5 | 5.5 | 4.8 | 4.0 | 2.0 | 4.5 | 5.5 |
+| [Cha-Ching](projects/cha_ching) | 3.0 | 3.5 | 3.0 | 3.5 | 4.0 | 3.5 | 3.5 |
+| [Miracle Cash](projects/miracle_cash) | 2.0 | 2.5 | 2.0 | 2.0 | 3.0 | 3.0 | 2.5 |
+| [iiZR Playbook](projects/iizr_playbook) | 2.6 | 4.0 | 4.6 | 7.0 | 3.4 | 3.7 | 3.2 |
+| [Veritas Vault](projects/veritas_vault) | 2.0 | 1.5 | 1.0 | 1.5 | 3.0 | 2.5 | 2.0 |
+| [BG Wealth Sharing](projects/bg_wealth_sharing) | 2.5 | 3.0 | 2.5 | 3.0 | 3.5 | 3.5 | 3.0 |
+| [Bitton](projects/bitton) | 2.6 | 3.2 | 2.2 | 2.0 | 2.5 | 3.0 | 2.5 |
+| [SQWL](projects/sqwl) | 4.75 | 4.0 | 4.5 | 5.0 | 4.75 | 3.67 | 3.0 |
+| [Masterwealthbuilders](projects/masterwealthbuilders) | 4.0 | 4.5 | 3.5 | 4.0 | 4.5 | 4.0 | 4.0 |
+| [XSynergy](projects/xsynergy) | 0.75 | 2.25 | 1.25 | 1.5 | 2.25 | 2.25 | 1.5 |
+| [Zionix Global](projects/zionix_global) | 0.75 | 1.67 | 1.0 | 1.0 | 1.5 | 1.25 | 1.0 |
+| [Tereth](projects/tereth) | 3.25 | 4.0 | 3.75 | 4.5 | 4.0 | 4.0 | 3.5 |
+| [Sosana](projects/sosana) | 4.5 | 5.0 | 4.0 | 5.5 | 6.0 | 5.0 | 5.5 |
+| [QuantumFi Global](projects/quantumfi_global) | 4.5 | 5.0 | 4.5 | 5.0 | 3.5 | 5.5 | 5.0 |
+| [My Business Club](projects/my_business_club) | 1.5 | 2.0 | 1.0 | 2.0 | 1.75 | 1.25 | 1.25 |
+| [Mario Lundqvist](projects/mario_lundqvist) | 3.25 | 3.0 | 2.0 | 3.0 | 2.25 | 1.33 | 2.75 |
+| [D.AI.SY](projects/daisey) | 4.0 | 4.0 | 3.5 | 3.5 | 4.0 | 4.5 | 3.5 |
+| [BehindMLM](projects/behindmlm) | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ---
 
@@ -102,6 +135,3 @@ Project scores are subject to revision based on:
 
 ---
 
-## 📬 Report Issues
-
-If you have information that may affect a project's assessment, please submit documentation for review. Anonymous tips are accepted, but verifiable sources receive priority consideration.
