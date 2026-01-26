@@ -13,7 +13,11 @@ const config = {
   organizationName: 'crypto_bros',
   projectName: 'easy-risk-tracker',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',

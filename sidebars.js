@@ -14,6 +14,11 @@ const sidebars = {
     {
       type: 'category',
       label: '🟢 Low Risk Projects',
+      link: {
+        type: 'generated-index',
+        slug: '/category/low-risk',
+        title: '🟢 Low Risk Projects',
+      },
       items: [
         'projects/gradient',
         'projects/grass',
@@ -25,6 +30,11 @@ const sidebars = {
     {
       type: 'category',
       label: '🟡 Moderate Risk Projects',
+      link: {
+        type: 'generated-index',
+        slug: '/category/moderate-risk',
+        title: '🟡 Moderate Risk Projects',
+      },
       items: [
         'projects/denet',
         'projects/kast_card',
@@ -40,6 +50,11 @@ const sidebars = {
     {
       type: 'category',
       label: '🟠 High Risk Projects',
+      link: {
+        type: 'generated-index',
+        slug: '/category/high-risk',
+        title: '🟠 High Risk Projects',
+      },
       items: [
         'projects/cha_ching',
         'projects/miracle_cash',
@@ -62,6 +77,11 @@ const sidebars = {
     {
       type: 'category',
       label: '🔴 Critical Risk Projects',
+      link: {
+        type: 'generated-index',
+        slug: '/category/critical-risk',
+        title: '🔴 Critical Risk Projects',
+      },
       items: [
         'projects/bellator',
         'projects/xusd_x1',
