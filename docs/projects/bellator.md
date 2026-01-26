@@ -31,7 +31,7 @@ tags: [critical-risk, mlm, nodes, phoenic-token]
 | **Project Name** | Bellator (BellatorLife) |
 | **Category** | MLM / Node Sales / Token Investment |
 | **Token** | Phoenic (PNIC) |
-| **Admin(s)** | Benjamin Funsch |
+| **iiZR Analyst** | Benjamin Funsch |
 | **Website** | bellatorlife.com |
 | **Social** | Twitter: @BellatorlifeonX, Telegram |
 
@@ -82,7 +82,7 @@ tags: [critical-risk, mlm, nodes, phoenic-token]
 
 | Factor | Finding |
 |--------|---------|
-| Identity Verification | Single admin (Benjamin Funsch) with Google profile photo only |
+| Identity Verification | No verified leadership profiles disclosed |
 | CEO Claimed | Micah Theard mentioned - unverified professional background |
 | Team Size | No disclosed team page or professional credentials |
 | Track Record | No verifiable history of successful projects |
@@ -90,7 +90,7 @@ tags: [critical-risk, mlm, nodes, phoenic-token]
 
 **Concerns:**
 - No LinkedIn profiles or verifiable professional backgrounds
-- Single point of contact for all communications
+- No verified leadership team or executive bios
 - Connection to MLM network marketing circles
 
 ### 2. Tokenomics (Score: 2.5/10)

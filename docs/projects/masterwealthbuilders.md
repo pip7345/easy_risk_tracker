@@ -6,8 +6,8 @@ tags: [high-risk, unrealistic-claims, infinite-banking, mlm-style]
 
 # Masterwealthbuilders LLC Risk Assessment
 
-<div className="risk-badge high">
-  🟠 HIGH RISK - 4.0/10
+<div className="risk-badge critical">
+   🔴 CRITICAL RISK - 4.0/10
 </div>
 
 ## Risk Score Breakdown
@@ -31,7 +31,7 @@ tags: [high-risk, unrealistic-claims, infinite-banking, mlm-style]
 | **Project Name** | Masterwealthbuilders LLC |
 | **Website** | propps.me/masterwealthbuilders |
 | **Category** | Financial Services / Infinite Banking |
-| **Admin** | Andre' Normann |
+| **Public Profile** | TK Pryor (Wealth Strategist, license #1385034) |
 | **Tags** | Infinite Banking, Self-Directed Retirement, Upside Without Downside, Market Loss Protection |
 | **Target Audience** | Business owners, Individuals seeking wealth building |
 
@@ -70,12 +70,12 @@ tags: [high-risk, unrealistic-claims, infinite-banking, mlm-style]
 ## Category Breakdown
 
 ### Leadership & Team (4.0/10)
-**SCORE: 4.0** - Single operator, LLC structure
+**SCORE: 4.0** - Limited leadership verification
 
-- Andre' Normann as sole visible administrator
+- Public profile lists TK Pryor as Wealth Strategist (license #1385034)
 - LLC structure provides limited liability but limited verification
 - No team or advisory board visible
-- "** Andre' Normann **" formatting suggests promotional focus
+- Promotional formatting but no leadership verification
 - No verifiable professional credentials in finance/insurance
 
 ### Tokenomics (4.5/10)
@@ -111,7 +111,7 @@ tags: [high-risk, unrealistic-claims, infinite-banking, mlm-style]
 - 3 likes on tracking platform (minimal engagement)
 - Single update focused on EmployWell Program
 - No independent reviews or third-party analysis
-- "Bullish" rating by admin on own update
+- No independent reviews or third-party analysis
 - Community appears to be direct clients/prospects
 
 ### Technical Quality (4.0/10)
@@ -130,7 +130,7 @@ tags: [high-risk, unrealistic-claims, infinite-banking, mlm-style]
 - No detailed product documentation public
 - EmployWell Program details behind paywall
 - LLC filings may be verifiable but not linked
-- Insurance/financial licensing not displayed
+- License number listed but scope of licensing is unclear
 
 ### Personal Assessment (3.5/10)
 **SCORE: 3.5** - Significant concerns
@@ -147,7 +147,7 @@ Key issues:
 ### ⚠️ HIGH CAUTION - Verify Before Engaging
 
 1. **Before Any Engagement:**
-   - Verify Andre' Normann's licensing (insurance, securities, etc.)
+   - Verify TK Pryor's licensing (insurance, securities, etc.)
    - Request independent verification of EmployWell Program claims
    - Understand "infinite banking" involves whole life insurance policies
    - Get any savings claims in writing with methodology

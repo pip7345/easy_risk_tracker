@@ -16,7 +16,7 @@ Builder is a Polygon-based decentralized staking protocol with an elastic supply
 
 **Tags:** DeFi Staking Protocol, Elastic Supply Token, Emission-Based Rewards, Polygon Network, Long-Term Lockups, Calendar-Based Vesting, Referral Incentive Model, Ambassador Program, Dilution Risk, Mortgage-Linked Vision
 
-**Admins:** Josephine Barrientos, Jonahmarie, Miqoshi Onvani
+**iiZR Analysts:** Josephine Barrientos, Jonahmarie, Miqoshi Onvani
 
 ---
 
@@ -25,14 +25,14 @@ Builder is a Polygon-based decentralized staking protocol with an elastic supply
 ### 1. Leadership & Team Transparency (15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Founders publicly identified | 2/10 | No centralized company or identified founders; admin names only |
-| Team background verifiable | 2/10 | Admins have profiles but no professional background verification |
+| Founders publicly identified | 2/10 | No centralized company or identified founders |
+| Team background verifiable | 2/10 | No professional background verification provided |
 | Advisory board disclosed | 1/10 | No advisory board disclosed |
 | Company registration transparent | 1/10 | Protocol operates without centralized company structure |
 
 **Category Score: 1.5/10**
 
-*Justification: The project explicitly states it "operates without a centralized company" - a significant red flag. No leadership team, founders, or corporate structure is disclosed. Only admin names are visible with no verifiable professional backgrounds.*
+*Justification: The project explicitly states it "operates without a centralized company" - a significant red flag. No leadership team, founders, or corporate structure is disclosed.*
 
 ### 2. Tokenomics & Financial Model (15%)
 | Criteria | Score | Notes |

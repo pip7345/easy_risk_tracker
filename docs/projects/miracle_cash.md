@@ -31,7 +31,7 @@ tags: [critical-risk, defi, payment, mlm, urgency-tactics]
 | **Project Name** | Miracle Cash & More |
 | **Website** | miraclecash.com |
 | **Category** | DeFi / Payment / Fintech |
-| **Admin** | Benjamin Funsch |
+| **iiZR Analyst** | Benjamin Funsch |
 | **Tags** | DeFi, Payment, Mirx |
 | **Connected Projects** | Minterra, Metaterra, MiracleChain, Cashflownft, PNIC token |
 
@@ -66,9 +66,9 @@ tags: [critical-risk, defi, payment, mlm, urgency-tactics]
 ## Category Breakdown
 
 ### Leadership & Team (2.0/10)
-**SCORE: 2.0** - Single admin with concerning patterns
+**SCORE: 2.0** - Leadership not verified
 
-- Benjamin Funsch as sole listed administrator
+- No verified leadership bios or credentials disclosed
 - Connected to multiple interconnected projects (complexity concern)
 - No verifiable professional credentials
 - Communication blackouts raise serious concerns

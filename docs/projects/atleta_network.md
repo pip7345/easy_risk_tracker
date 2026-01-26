@@ -8,7 +8,7 @@
 | **Category** | Layer-1 Blockchain (Sports/Web3 Infrastructure) |
 | **Website** | [atleta.network](https://atleta.network/) |
 | **Docs** | [Atleta Network GitBook](https://blockchain-sports.gitbook.io/atleta-network) |
-| **iiZR Analyst** | Jena Perkins (platform analyst, not project leadership) |
+| **iiZR Analyst** | Jena Perkins |
 | **Community** | [Discord](https://discord.gg/atleta), [X/Twitter](https://x.com/Atleta_Network), [Telegram](https://t.me/atleta_network) |
 | **Token** | $ATLA |
 
@@ -21,7 +21,7 @@ Atleta Network presents itself as a modular, multi-layer L1 blockchain optimized
 ### 1. Leadership & Team (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Identity & transparency | 5/10 | No clear leadership profiles on the main site; iiZR “admin” is an analyst, not leadership |
+| Identity & transparency | 5/10 | No clear leadership profiles on the main site |
 | Track record | 5/10 | Media coverage and public testnet history, but limited verified leadership history |
 | Regulatory & legal standing | 5/10 | No disclosed regulatory status or entity details on main site |
 | Communication & accessibility | 5/10 | Active community channels and documentation updates |

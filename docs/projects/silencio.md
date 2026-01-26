@@ -8,11 +8,11 @@ tags: [moderate-risk, depin, noise-mapping, environmental-data, token-incentives
 
 <div className="risk-badge risk-moderate">MODERATE RISK</div>
 
-**Final Score: 6.8 / 10**
+**Final Score: 6.7 / 10**
 
 | Category | Score | Weight | Weighted |
 |----------|-------|--------|----------|
-| Leadership & Team | 6.5 | 15% | 0.98 |
+| Leadership & Team | 5.5 | 15% | 0.83 |
 | Tokenomics | 6.5 | 15% | 0.98 |
 | Earning Mechanism | 7.5 | 10% | 0.75 |
 | Liquidity & Market | 6.5 | 20% | 1.30 |
@@ -20,7 +20,7 @@ tags: [moderate-risk, depin, noise-mapping, environmental-data, token-incentives
 | Technical Quality | 7.0 | 15% | 1.05 |
 | Transparency | 6.5 | 10% | 0.65 |
 | Personal Assessment | 6.5 | 5% | 0.33 |
-| **TOTAL** | | **100%** | **6.8** |
+| **TOTAL** | | **100%** | **6.7** |
 
 ---
 
@@ -31,7 +31,7 @@ tags: [moderate-risk, depin, noise-mapping, environmental-data, token-incentives
 | **Project Name** | Silencio |
 | **Category** | DePIN / Noise Mapping / Environmental Data |
 | **Token** | $SLC |
-| **Admin(s)** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
+| **iiZR Analysts** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
 | **Website** | silencio.network |
 | **Social** | Twitter: @silencioNetwork, Discord |
 
@@ -84,25 +84,23 @@ tags: [moderate-risk, depin, noise-mapping, environmental-data, token-incentives
 
 ## 📊 Category Breakdown
 
-### 1. Leadership & Team (Score: 6.5/10)
+### 1. Leadership & Team (Score: 5.5/10)
 
 **Assessment:** Moderate
 
 | Factor | Finding |
 |--------|---------|
-| Identity Verification | Three admins with Google profile photos |
+| Identity Verification | No verified leadership profiles |
 | Team Size | Not publicly disclosed |
 | Track Record | Limited public history |
 | Accessibility | Active community channels |
 
 **Strengths:**
-- Multiple admins sharing responsibility
 - Responsive community management
 - Active Discord and Twitter presence
 
 **Concerns:**
 - No detailed team page with professional backgrounds
-- Same admin team across multiple DePIN projects (potential dilution of focus)
 
 ### 2. Tokenomics (Score: 6.5/10)
 

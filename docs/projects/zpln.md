@@ -16,7 +16,7 @@ ZPLN is a mobile gaming platform that merges entertainment, competition, and cry
 
 **Tags:** Play to Earn, Game
 
-**Admins:** Miqoshi Onvani, Andre' Normann
+**iiZR Analysts:** Miqoshi Onvani, Andre' Normann
 
 ---
 
@@ -25,14 +25,14 @@ ZPLN is a mobile gaming platform that merges entertainment, competition, and cry
 ### 1. Leadership & Team Transparency (15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Founders publicly identified | 4/10 | Andre' Normann actively posts updates; no LinkedIn/background |
-| Team background verifiable | 3/10 | Admin profiles visible but no professional verification |
+| Founders publicly identified | 2/10 | No verified leadership profiles |
+| Team background verifiable | 2/10 | No professional verification or credentials shown |
 | Advisory board disclosed | 2/10 | No advisory board mentioned |
 | Company registration transparent | 2/10 | No company registration or legal entity disclosed |
 
-**Category Score: 2.75/10**
+**Category Score: 1.75/10**
 
-*Justification: While Andre' Normann is active and communicative, there's no verifiable professional background, company registration, or legal entity disclosed. The team appears to be small and informal.*
+*Justification: Leadership identities are not verified in available sources. No company registration or legal entity is disclosed.*
 
 ### 2. Tokenomics & Financial Model (15%)
 | Criteria | Score | Notes |
@@ -123,7 +123,7 @@ ZPLN is a mobile gaming platform that merges entertainment, competition, and cry
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership & Team | 15% | 2.75 | 0.41 |
+| Leadership & Team | 15% | 1.75 | 0.26 |
 | Tokenomics | 15% | 4.0 | 0.60 |
 | Earning Mechanism | 10% | 4.5 | 0.45 |
 | Liquidity & Exit | 20% | 3.5 | 0.70 |
@@ -132,11 +132,11 @@ ZPLN is a mobile gaming platform that merges entertainment, competition, and cry
 | Transparency | 10% | 5.25 | 0.53 |
 | Personal Factors | 5% | 4.7 | 0.24 |
 
-### **FINAL SCORE: 3.94/10**
+### **FINAL SCORE: 3.79/10**
 
 ---
 
-## Risk Rating: 🟠 HIGH RISK
+## Risk Rating: 🔴 CRITICAL RISK
 
 This is an early-stage play-to-earn project with active development but significant concerns around tokenomics and MLM-style structures.
 

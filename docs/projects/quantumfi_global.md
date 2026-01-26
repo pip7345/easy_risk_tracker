@@ -7,7 +7,7 @@
 | **Name** | QuantumFi Global |
 | **Category** | Fintech / Card Issuing / Payments Infrastructure |
 | **Website** | [quantumfiglobal.com](https://quantumfiglobal.com/) |
-| **iiZR Analyst** | Not listed (iiZR admin tags are analysts, not leadership) |
+| **iiZR Analyst** | Not listed |
 | **Contact (site)** | Huntington Beach, CA (address listed) |
 
 ## Project Description

@@ -9,7 +9,7 @@
 | **DEXTools** | [Tereth on Uniswap](https://www.dextools.io/app/uniswap/pair-explorer/0xeec12c052c05ce5a3e4c38b7b1a6e98d83f84881) |
 | **Launch Date** | July 2021 |
 | **Founder** | Josh Magness |
-| **Admin** | Miqoshi Onvani |
+| **iiZR Analyst** | Miqoshi Onvani |
 | **Likes** | 10 |
 | **Updates** | 2 |
 
@@ -22,12 +22,12 @@ Tereth is described as an "ever-rising asset for your portfolio" - a community t
 ### 1. Leadership & Team (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team transparency | 5/10 | Founder (Josh Magness) and admin named |
+| Team transparency | 4/10 | Founder named; no verified leadership profiles beyond founder mention |
 | Experience verification | 3/10 | No verifiable backgrounds |
 | Track record | 5/10 | Operating since July 2021 (3+ years) |
 | Communication quality | 4/10 | Two updates, mentions relaunch |
 
-**Category Score: 4.25/10**
+**Category Score: 3.25/10**
 
 ### 2. Tokenomics & Financial Model (Weight: 15%)
 | Criteria | Score | Notes |
@@ -105,7 +105,7 @@ Tereth is described as an "ever-rising asset for your portfolio" - a community t
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership | 15% | 4.25 | 0.638 |
+| Leadership | 15% | 3.25 | 0.488 |
 | Tokenomics | 15% | 4.0 | 0.600 |
 | Earning | 10% | 3.75 | 0.375 |
 | Liquidity | 20% | 4.5 | 0.900 |
@@ -114,7 +114,7 @@ Tereth is described as an "ever-rising asset for your portfolio" - a community t
 | Transparency | 10% | 3.5 | 0.350 |
 | Personal | 5% | 4.25 | 0.213 |
 
-### **FINAL SCORE: 4.08/10** 🟠 HIGH RISK
+### **FINAL SCORE: 3.93/10** 🔴 CRITICAL RISK
 
 ---
 
@@ -124,7 +124,7 @@ Tereth is described as an "ever-rising asset for your portfolio" - a community t
 2. **16% Total Tax**: High friction makes trading expensive
 3. **Redistribution Token Model**: Often unsustainable long-term
 4. **"Relaunch" Status**: Indicates previous failure or problems
-5. **Miqoshi Onvani Admin**: Connected to multiple high-risk projects
+5. **Limited Leadership Verification**: No verifiable leadership credentials beyond founder name
 6. **No Audit**: Smart contract security unverified
 7. **Unknown Trading Volume**: Liquidity depth unclear
 8. **No Legal Entity**: Community token with no accountability

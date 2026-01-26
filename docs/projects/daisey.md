@@ -7,7 +7,7 @@
 | **Name** | D.AI.SY |
 | **Category** | AI-Driven Investment Platform |
 | **Telegram** | [daisy_global](https://t.me/daisy_global) |
-| **iiZR Analyst** | Jena Perkins (platform analyst, not project leadership) |
+| **iiZR Analyst** | Jena Perkins |
 | **Updates** | Security alerts and operational updates on Telegram |
 
 ## Project Description
@@ -19,7 +19,7 @@ D.AI.SY presents itself as an AI-driven investment platform using algorithmic tr
 ### 1. Leadership & Team (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Identity & transparency | 4.0/10 | No clear leadership bios disclosed in the scrape; iiZR admin is an analyst |
+| Identity & transparency | 4.0/10 | No clear leadership bios disclosed in the scrape |
 | Track record | 4.0/10 | Endotech referenced, but leadership verification not provided here |
 | Regulatory & legal standing | 4.0/10 | No visible licensing or regulatory disclosures |
 | Communication & accessibility | 4.0/10 | Telegram updates exist, but limited formal transparency |

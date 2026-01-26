@@ -9,7 +9,7 @@
 | **Website** | [texitcoin.org](https://texitcoin.org) |
 | **Twitter** | [@TEXITcoin_TXC](https://x.com/TEXITcoin_TXC) |
 | **Telegram** | [texitcoin_txc](https://t.me/texitcoin_txc) |
-| **Admin** | Miqoshi Onvani |
+| **iiZR Analyst** | Miqoshi Onvani |
 | **Blockchain** | Independent Layer-1 (Scrypt-based, Litecoin merge-mining) |
 
 ## Description
@@ -29,13 +29,13 @@ The project positions itself as providing "economic freedom" and "sovereign mone
 ### 1. Leadership & Track Record (15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team Identity | 3/10 | Single admin (Miqoshi Onvani) - same as Builder, iiZR, and other high-risk projects |
+| Team Identity | 2/10 | No verified leadership profiles |
 | Professional Background | 2/10 | No verifiable credentials for "seasoned monetary innovators" |
-| Past Project History | 2/10 | Admin associated with multiple questionable projects |
+| Past Project History | 2/10 | No verifiable leadership track record provided |
 | Transparency | 3/10 | Vague team structure, no company registration visible |
 | Community Engagement | 5/10 | 4 likes, active Telegram, recent updates on holiday parade |
 
-**Category Score: 3.0/10**
+**Category Score: 2.0/10**
 
 ---
 
@@ -134,7 +134,7 @@ The project positions itself as providing "economic freedom" and "sovereign mone
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership & Track Record | 15% | 3.0 | 0.45 |
+| Leadership & Track Record | 15% | 2.0 | 0.30 |
 | Tokenomics & Sustainability | 15% | 3.5 | 0.53 |
 | Earning Mechanism | 10% | 4.0 | 0.40 |
 | Liquidity & Exit Strategy | 20% | 2.0 | 0.40 |
@@ -143,7 +143,7 @@ The project positions itself as providing "economic freedom" and "sovereign mone
 | Transparency & Communication | 10% | 3.25 | 0.33 |
 | Personal Risk Assessment | 5% | 2.8 | 0.14 |
 
-### **TOTAL SCORE: 3.19/10** 🔴 VERY HIGH RISK
+### **TOTAL SCORE: 3.04/10** 🔴 VERY HIGH RISK
 
 ---
 
@@ -152,7 +152,7 @@ The project positions itself as providing "economic freedom" and "sovereign mone
 ### Major Red Flags
 1. **Political Alignment** - Tied to "TEXIT" secession movement creates regulatory/legal risk
 2. **Centralized Mining** - "Mined only in Texas" contradicts decentralization principles
-3. **Unknown Team** - Single admin manages multiple other high-risk projects
+3. **Unknown Team** - No verified leadership team or credentials
 4. **No Exchange Listings** - Extremely limited liquidity expected
 5. **Competing Against Established L1s** - No clear competitive advantage vs Bitcoin, Litecoin
 6. **Vague Tokenomics** - No published supply schedule, emission rates, or distribution
@@ -182,7 +182,7 @@ The project positions itself as providing "economic freedom" and "sovereign mone
 ---
 
 ## Verdict
-TEXITcoin combines technical merit (working blockchain, merge mining) with significant red flags (political alignment, centralized mining claims, unknown team). The association with Texas secession politics creates unique regulatory and legal risks. The project admin appears on multiple other high-risk projects. Very limited liquidity expected. Mining investment carries substantial risk of total loss.
+TEXITcoin combines technical merit (working blockchain, merge mining) with significant red flags (political alignment, centralized mining claims, unknown team). The association with Texas secession politics creates unique regulatory and legal risks. Very limited liquidity expected. Mining investment carries substantial risk of total loss.
 
 **Recommendation:** Avoid investment. The political alignment and regulatory risks, combined with minimal liquidity and unverified team, make this extremely high risk.
 

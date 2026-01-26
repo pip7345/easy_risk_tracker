@@ -36,7 +36,7 @@ tags: [low-risk, hardware-wallet, cold-storage, security, non-depin]
 | **Founded** | 2017 |
 | **Headquarters** | Zug, Switzerland |
 | **Funding** | $15M from SBI Crypto Investment Ltd (2019) |
-| **Admin(s)** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
+| **iiZR Analysts** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
 | **Website** | tangem.com |
 | **Social** | Twitter: @tangem, Discord, Telegram |
 

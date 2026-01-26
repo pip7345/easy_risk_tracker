@@ -8,7 +8,7 @@
 | **Category** | Sports/Web3 Infrastructure + NFT/Analytics |
 | **Website** | [bcsports.io](https://bcsports.io/) |
 | **Whitepaper** | [BCS Whitepaper](https://blockchain-sports.gitbook.io/whitepaper) |
-| **iiZR Analyst** | Jena Perkins (platform analyst, not project leadership) |
+| **iiZR Analyst** | Jena Perkins |
 | **Community** | [X/Twitter](https://x.com/blockchainsprts), [Discord](https://discord.gg/ja9bnrz37P), [Telegram](https://t.me/bcsports_io) |
 | **Headquarters (site)** | Dubai Silicon Oasis, UAE |
 

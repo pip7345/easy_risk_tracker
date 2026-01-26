@@ -7,7 +7,8 @@
 | **Name** | Zionix Global |
 | **Category** | AI Trading Bots / Investment Platform |
 | **Website** | [zionixglobal.ai](https://zionixglobal.ai) |
-| **Admin** | **NOT LISTED** |
+| **Site Access** | DNS lookup failed; appears offline. AI crawler could not parse. |
+| **Team** | Not disclosed |
 | **Likes** | 2 |
 | **Updates** | 1 |
 
@@ -20,7 +21,7 @@ Zionix Global describes itself as an "AI-powered trading bots ecosystem" offerin
 ### 1. Leadership & Team (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team transparency | 0/10 | **NO ADMIN LISTED** - critical failure |
+| Team transparency | 0/10 | No verified team disclosed |
 | Experience verification | 0/10 | Anonymous operators |
 | Track record | 1/10 | No verifiable history |
 | Communication quality | 2/10 | Single update about "system migration" |
@@ -118,7 +119,7 @@ Zionix Global describes itself as an "AI-powered trading bots ecosystem" offerin
 
 ## Major Red Flags 🚩
 
-1. **No Admin Listed**: Anonymous operators controlling investment funds
+1. **No Verified Team**: Anonymous operators controlling investment funds
 2. **"Institutional-Grade" Claims**: Marketing buzzword without verification
 3. **"Quantum Computing" Tag**: Misleading technology claims
 4. **40-Day Lock-Up**: Forced holding period prevents exits

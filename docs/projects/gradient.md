@@ -8,11 +8,11 @@ tags: [moderate-risk, depin, ai-infrastructure, solana, edge-compute]
 
 <div className="risk-badge risk-moderate">MODERATE RISK</div>
 
-**Final Score: 6.4 / 10**
+**Final Score: 6.3 / 10**
 
 | Category | Score | Weight | Weighted |
 |----------|-------|--------|----------|
-| Leadership & Team | 6.0 | 15% | 0.90 |
+| Leadership & Team | 5.0 | 15% | 0.75 |
 | Tokenomics | 5.5 | 15% | 0.83 |
 | Earning Mechanism | 6.5 | 10% | 0.65 |
 | Liquidity & Market | 6.0 | 20% | 1.20 |
@@ -20,7 +20,7 @@ tags: [moderate-risk, depin, ai-infrastructure, solana, edge-compute]
 | Technical Quality | 7.5 | 15% | 1.13 |
 | Transparency | 6.5 | 10% | 0.65 |
 | Personal Assessment | 6.0 | 5% | 0.30 |
-| **TOTAL** | | **100%** | **6.4** |
+| **TOTAL** | | **100%** | **6.3** |
 
 ---
 
@@ -32,7 +32,7 @@ tags: [moderate-risk, depin, ai-infrastructure, solana, edge-compute]
 | **Category** | DePIN / Edge Compute / Decentralized AI Infrastructure |
 | **Token** | Pending (No token launched yet) |
 | **Blockchain** | Solana |
-| **Admin(s)** | Damien Ramos, Patty Edgecombe |
+| **iiZR Analysts** | Damien Ramos, Patty Edgecombe |
 | **Website** | gradient.network |
 | **Social** | Twitter: @Gradient_HQ, Discord |
 
@@ -85,13 +85,13 @@ tags: [moderate-risk, depin, ai-infrastructure, solana, edge-compute]
 
 ## 📊 Category Breakdown
 
-### 1. Leadership & Team (Score: 6.0/10)
+### 1. Leadership & Team (Score: 5.0/10)
 
 **Assessment:** Moderate
 
 | Factor | Finding |
 |--------|---------|
-| Identity Verification | Two admins with Google profile photos |
+| Identity Verification | No verified leadership profiles |
 | Team Size | Research team presenting at academic conferences |
 | Track Record | Early stage - limited public history |
 | Accessibility | Active Discord and community engagement |

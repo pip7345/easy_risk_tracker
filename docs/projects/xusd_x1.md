@@ -29,11 +29,11 @@ tags: [critical-risk, stablecoin, defi, confirmed-fraud, federal-charges]
 | Attribute | Details |
 |-----------|---------|
 | **Project Name** | XUSD ONE / X1 |
-| **Website** | Xusd.co (DOWN) |
+| **Website** | [xusd.co](https://www.xusd.co/) |
 | **Category** | Stablecoin / DeFi |
-| **Admin** | Patty Edgecombe |
+| **Team** | Not disclosed |
 | **Tags** | Stablecoin, DeFi |
-| **Status** | ⛔ SITE/BLOCKCHAIN DOWN - FEDERAL INVESTIGATION |
+| **Status** | ⛔ SITE ACTIVE - FEDERAL INVESTIGATION REPORTED |
 
 <div className="red-flags">
 
@@ -48,7 +48,7 @@ tags: [critical-risk, stablecoin, defi, confirmed-fraud, federal-charges]
 - **4 defendants currently in custody, 2 out on bail**
 
 ### Platform Status
-- Website and blockchain are completely **DOWN**
+- Website is active; blockchain status is unclear
 - All updates on tracking platforms marked **"Bearish"**
 - Complete loss of investor funds expected
 

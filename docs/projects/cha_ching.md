@@ -31,7 +31,7 @@ tags: [critical-risk, bellator, white-label, stalled-development, ai]
 | **Project Name** | Cha-Ching |
 | **Website** | cha-ching.bellatorlife.com |
 | **Category** | AI Financial Planner / White Label |
-| **Admins** | Miqoshi Onvani, Benjamin Funsch |
+| **iiZR Analysts** | Miqoshi Onvani, Benjamin Funsch |
 | **Tags** | A.I., Financial Planner, Financial Goals, Project Marketing, White Label |
 | **Parent Project** | Bellator (HIGH RISK flagged) |
 
@@ -63,8 +63,7 @@ tags: [critical-risk, bellator, white-label, stalled-development, ai]
 ### Leadership & Team (3.0/10)
 **SCORE: 3.0** - Shared with problematic projects
 
-- Miqoshi Onvani - also administers other high-risk projects in ecosystem
-- Benjamin Funsch - connected to Miracle Cash & More (CRITICAL RISK)
+- Leadership identities not verified in available sources
 - Leadership spread thin across multiple questionable projects
 - No dedicated team for Cha-Ching development visible
 

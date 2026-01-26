@@ -29,13 +29,13 @@ Target markets are regions with expensive remittances, limited banking access, a
 ### 1. Leadership & Track Record (15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team Identity | 3/10 | No team members identified on project page |
-| Professional Background | N/A | Cannot verify without team disclosure |
-| Past Project History | N/A | No track record available |
-| Transparency | 3/10 | No admin listed, no team page |
-| Community Engagement | 3/10 | 3 likes, no updates available |
+| Team Identity | 7/10 | Leadership listed on official site (board members named) |
+| Professional Background | 6/10 | Executives cite prior roles at Tether, Wise, Bitpanda, Binance |
+| Past Project History | 6/10 | Track record suggested by leadership bios |
+| Transparency | 6/10 | Corporate entities and jurisdictions listed |
+| Community Engagement | 3/10 | Limited iiZR engagement data |
 
-**Category Score: 3.0/10**
+**Category Score: 6.5/10**
 
 ---
 
@@ -107,13 +107,13 @@ Target markets are regions with expensive remittances, limited banking access, a
 ### 7. Transparency & Communication (10%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Update Frequency | 1/10 | "No updates available" - major red flag |
-| Financial Disclosure | 1/10 | No financial information |
-| Risk Acknowledgment | 2/10 | No risk disclosures |
-| Roadmap Clarity | 3/10 | Vision clear but no milestones |
+| Update Frequency | 4/10 | Active product site, blog present |
+| Financial Disclosure | 4/10 | No audited financials, but corporate entities listed |
+| Risk Acknowledgment | 5/10 | Legal/terms links provided |
+| Roadmap Clarity | 4/10 | Product roadmap implied but not detailed |
 | Response to Issues | N/A | No issues documented |
 
-**Category Score: 1.75/10**
+**Category Score: 5.5/10**
 
 ---
 
@@ -134,34 +134,31 @@ Target markets are regions with expensive remittances, limited banking access, a
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership & Track Record | 15% | 3.0 | 0.45 |
+| Leadership & Track Record | 15% | 6.5 | 0.98 |
 | Tokenomics & Sustainability | 15% | 5.5 | 0.83 |
 | Earning Mechanism | 10% | 4.8 | 0.48 |
 | Liquidity & Exit Strategy | 20% | 4.0 | 0.80 |
 | Community & Ecosystem | 10% | 2.0 | 0.20 |
 | Technical Infrastructure | 15% | 4.5 | 0.68 |
-| Transparency & Communication | 10% | 1.75 | 0.18 |
+| Transparency & Communication | 10% | 5.5 | 0.55 |
 | Personal Risk Assessment | 5% | 2.75 | 0.14 |
 
-### **TOTAL SCORE: 3.76/10** 🔴 VERY HIGH RISK
+### **TOTAL SCORE: 4.64/10** 🟠 HIGH RISK
 
 ---
 
-## Risk Rating: 🔴 VERY HIGH RISK
+## Risk Rating: 🟠 HIGH RISK
 
 ### Major Red Flags
-1. **No Team Disclosure** - Zero information about who is building this project
-2. **Zero Updates** - "No updates available" indicates abandoned or very early project
-3. **Minimal Community** - Only 3 likes, no visible engagement
-4. **No Product Evidence** - No working product demonstrated
-5. **Unknown Token Status** - Where does WFI trade? Is it even launched?
-6. **No Audits Mentioned** - For a financial services platform, this is critical
-7. **Regulatory Concerns** - "Banking without a bank" faces heavy regulatory scrutiny
+1. **Limited Independent Verification** - No audited financials or third-party attestations
+2. **Minimal iiZR Engagement** - Only 3 likes, no visible iiZR updates
+3. **No Audits Mentioned** - For a financial services platform, this is critical
+4. **Regulatory Complexity** - Multi-entity structure across jurisdictions
 
 ### Positive Factors
-1. **Clear Value Proposition** - Addressing real problem (financial inclusion)
-2. **Legitimate Market** - Remittance and emerging market fintech is viable space
-3. **Token Utility Defined** - WFI has clear proposed utility
+1. **Leadership Listed** - Named board members and prior fintech/crypto experience
+2. **Regulated Entities Listed** - FINTRAC-registered MSB and other corporate entities disclosed
+3. **Clear Value Proposition** - Addressing real problem (financial inclusion)
 4. **Modern Tech Stack** - AI compliance, ZK proofs mentioned
 5. **Hybrid Approach** - Combining self-custody with compliance is innovative
 

@@ -12,11 +12,11 @@ tags: [moderate-risk, depin, bandwidth, mobile-mining, solana]
 
 | Category | Score | Weight | Weighted |
 |----------|-------|--------|----------|
-| Leadership & Team | 6.0 | 15% | 0.90 |
+| Leadership & Team | 5.0 | 15% | 0.75 |
 | Tokenomics | 6.5 | 15% | 0.98 |
 | Earning Mechanism | 6.5 | 10% | 0.65 |
-| Liquidity & Market | 6.5 | 20% | 1.30 |
-| Community & Reputation | 7.0 | 10% | 0.70 |
+| Liquidity & Market | 7.0 | 20% | 1.40 |
+| Community & Reputation | 7.5 | 10% | 0.75 |
 | Technical Quality | 6.5 | 15% | 0.98 |
 | Transparency | 6.5 | 10% | 0.65 |
 | Personal Assessment | 6.0 | 5% | 0.30 |
@@ -32,7 +32,7 @@ tags: [moderate-risk, depin, bandwidth, mobile-mining, solana]
 | **Category** | DePIN / Bandwidth Monetization / Mobile Mining |
 | **Token** | $UPT (Solana) |
 | **Blockchain** | Solana |
-| **Admin(s)** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
+| **iiZR Analysts** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
 | **Website** | uprock.com |
 | **Social** | Twitter: @UpRockCom, Discord |
 
@@ -55,7 +55,7 @@ tags: [moderate-risk, depin, bandwidth, mobile-mining, solana]
 
 4. **World Tour Promotions**: Marketing-heavy approach (New Zealand, Gulf Region tours) may prioritize hype over product
 
-5. **Same Admin Team**: Shares administrators with multiple other DePIN projects
+5. **Leadership Disclosure Gap**: No verified leadership profiles or company leadership page
 
 </div>
 
@@ -85,24 +85,22 @@ tags: [moderate-risk, depin, bandwidth, mobile-mining, solana]
 
 ## 📊 Category Breakdown
 
-### 1. Leadership & Team (Score: 6.0/10)
+### 1. Leadership & Team (Score: 5.0/10)
 
 **Assessment:** Moderate
 
 | Factor | Finding |
 |--------|---------|
-| Identity Verification | Three admins with Google profile photos |
+| Identity Verification | No verified leadership profiles |
 | Team Size | Not disclosed |
 | Track Record | Limited public history |
 | Accessibility | Active Discord and social media |
 
 **Strengths:**
-- Multiple admins managing community
 - Active engagement through world tour events
 - Responsive social media presence
 
 **Concerns:**
-- Same admin team across multiple DePIN projects (Grass, Silencio, DeNet)
 - No detailed team page with professional credentials
 - Potential dilution of focus across multiple projects
 
@@ -147,7 +145,7 @@ tags: [moderate-risk, depin, bandwidth, mobile-mining, solana]
 - Enterprise demand for this specific network unverified
 - Many similar projects competing for same use case
 
-### 4. Liquidity & Market (Score: 6.5/10)
+### 4. Liquidity & Market (Score: 7.0/10)
 
 **Assessment:** Moderate
 
@@ -155,7 +153,7 @@ tags: [moderate-risk, depin, bandwidth, mobile-mining, solana]
 |--------|---------|
 | Token | $UPT |
 | Blockchain | Solana |
-| Exchanges | Not clearly specified |
+| Exchanges | Jupiter, MEXC, BitMart, Coinstore, Biconomy, Cube (listed on site) |
 | Volume | Unknown |
 
 **Strengths:**
@@ -164,11 +162,9 @@ tags: [moderate-risk, depin, bandwidth, mobile-mining, solana]
 - DePIN sector has general market interest
 
 **Concerns:**
-- Trading venues and volume not clearly documented
-- May have limited exchange listings
 - Market dependent on overall DePIN sentiment
 
-### 5. Community & Reputation (Score: 7.0/10)
+### 5. Community & Reputation (Score: 7.5/10)
 
 **Assessment:** Good - Active Engagement
 
@@ -177,7 +173,7 @@ tags: [moderate-risk, depin, bandwidth, mobile-mining, solana]
 | Thumbs Up | 4 |
 | Thumbs Down | 0 |
 | Sentiment | Predominantly Bullish |
-| Activity | World Tour, giveaways, badge system |
+| Activity | World Tour, giveaways, badge system; ~2.6M users claimed on site |
 
 **Strengths:**
 - Positive community feedback (4:0 ratio)

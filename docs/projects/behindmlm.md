@@ -7,7 +7,7 @@
 | **Name** | BehindMLM |
 | **Category** | Investigative Blog / Review Site |
 | **Website** | [behindmlm.com](https://behindmlm.com/) |
-| **iiZR Analyst** | Miqoshi Onvani (platform analyst, not site leadership) |
+| **iiZR Analyst** | Miqoshi Onvani |
 | **Notes** | This is not an investment project; it is an informational watchdog site. |
 
 ## Summary

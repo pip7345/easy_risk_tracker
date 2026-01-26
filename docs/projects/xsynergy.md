@@ -8,7 +8,7 @@
 | **Category** | USDT Yield Protocol / DeFi |
 | **Website** | [xsynergy.io](https://xsynergy.io/) |
 | **Telegram** | [xsynergyio](https://t.me/xsynergyio) |
-| **Admin** | **NOT LISTED** |
+| **Team** | Not disclosed |
 | **Likes** | 4 |
 | **Updates** | 1 |
 
@@ -21,7 +21,7 @@ Xsynergy describes itself as a "trustless reward engine that turns USDT into dai
 ### 1. Leadership & Team (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team transparency | 0/10 | **NO ADMIN LISTED** - critical failure |
+| Team transparency | 0/10 | No verified team disclosed |
 | Experience verification | 0/10 | Anonymous team |
 | Track record | 1/10 | No verifiable history |
 | Communication quality | 2/10 | Single update (whitepaper breakdown) |
@@ -31,7 +31,7 @@ Xsynergy describes itself as a "trustless reward engine that turns USDT into dai
 ### 2. Tokenomics & Financial Model (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Token distribution | 2/10 | $XSYN token exists, no distribution details |
+| Token distribution | 3/10 | Token allocation chart and fixed supply shown |
 | Vesting schedules | 1/10 | Lock-up required but no unlock clarity |
 | Inflation/deflation model | 2/10 | Dual-token (USDT/$XSYN) economy unclear |
 | Utility clarity | 3/10 | Time-Mining + Vault Staking explained |
@@ -73,20 +73,20 @@ Xsynergy describes itself as a "trustless reward engine that turns USDT into dai
 |----------|-------|-------|
 | Audit status | 1/10 | No audit mentioned |
 | Smart contract security | 2/10 | Claims "fully on-chain" but unverified |
-| Technology stack | 3/10 | Whitepaper exists but not audited |
+| Technology stack | 3/10 | Whitepaper/docs available; on-chain claims |
 | Development activity | 2/10 | Minimal visible development |
 
-**Category Score: 2.0/10**
+**Category Score: 2.25/10**
 
 ### 7. Transparency & Compliance (Weight: 10%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
 | Regulatory status | 1/10 | Yield products face heavy scrutiny |
 | Financial disclosures | 1/10 | No TVL or financial data |
-| Operational clarity | 3/10 | Whitepaper breakdown provided |
+| Operational clarity | 4/10 | Whitepaper + tokenomics pages available |
 | Legal structure | 0/10 | No company or entity disclosed |
 
-**Category Score: 1.25/10**
+**Category Score: 1.5/10**
 
 ### 8. Personal Investment Factors (Weight: 5%)
 | Criteria | Score | Notes |
@@ -105,21 +105,21 @@ Xsynergy describes itself as a "trustless reward engine that turns USDT into dai
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
 | Leadership | 15% | 0.75 | 0.113 |
-| Tokenomics | 15% | 2.0 | 0.300 |
+| Tokenomics | 15% | 2.25 | 0.338 |
 | Earning | 10% | 1.25 | 0.125 |
 | Liquidity | 20% | 1.5 | 0.300 |
 | Community | 10% | 2.25 | 0.225 |
-| Technical | 15% | 2.0 | 0.300 |
-| Transparency | 10% | 1.25 | 0.125 |
+| Technical | 15% | 2.25 | 0.338 |
+| Transparency | 10% | 1.5 | 0.150 |
 | Personal | 5% | 1.0 | 0.050 |
 
-### **FINAL SCORE: 1.54/10** 🔴 CRITICAL RISK
+### **FINAL SCORE: 1.64/10** 🔴 CRITICAL RISK
 
 ---
 
 ## Major Red Flags 🚩
 
-1. **No Admin Listed**: Anonymous team is the highest risk factor
+1. **No Verified Team**: Anonymous operators are the highest risk factor
 2. **"Daily Earnings" Promises**: Classic high-yield scam language
 3. **Yield from "Protocol Activity"**: Vague, unsustainable revenue claim
 4. **USDT Lock-up Required**: Funds trapped with anonymous operators
@@ -138,6 +138,7 @@ Xsynergy describes itself as a "trustless reward engine that turns USDT into dai
 2. **Non-Custodial Claims**: If true, users control keys
 3. **Telegram Community**: Some community infrastructure
 4. **Clear Mechanism Names**: Time-Mining and Vault Staking are defined
+5. **Token Supply Published**: Fixed supply and contract address listed
 
 ---
 

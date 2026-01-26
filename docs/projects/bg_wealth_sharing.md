@@ -30,10 +30,11 @@ tags: [critical-risk, investment-scheme, false-institutional-claims, mlm]
 |-----------|---------|
 | **Project Name** | BG Wealth Sharing Investment Group |
 | **Website** | bg662.com |
+| **Site Access** | DNS lookup failed; appears offline. AI crawler could not parse. |
 | **Category** | Investment Ecosystem |
 | **Founded** | 2018 (claimed) |
 | **Founder** | Stephen Beard (claimed) |
-| **Admin** | Miqoshi Onvani |
+| **Team** | Not disclosed |
 | **Tags** | Digital Currency, Contract Trading, Futures & Securities, Trusts & Insurance, Micro-Loans, Private Equity, Financial Asset Management, Poverty Reduction, Wealth Growth, Sharing Economy, PassiveIncome, GenerationalWealth |
 
 <div className="red-flags">
@@ -74,7 +75,7 @@ Claims to operate across:
 
 - Stephen Beard as founder - no verifiable professional history
 - "IMF guidance" claim is likely fabricated
-- Miqoshi Onvani administers this and other high-risk projects
+- No verified leadership team or credentials disclosed
 - No visible executive team or professional credentials
 - "Founded in 2018" claim unverifiable
 
@@ -119,7 +120,7 @@ Claims to operate across:
 
 - Claims blockchain expertise but no technical documentation
 - "Digital currency trading and contracts" unverified
-- Website (bg662.com) provides company info only
+- Website (bg662.com) not accessible at review time
 - No smart contracts or on-chain verifiable activity
 - "Platform credibility" claimed without evidence
 
@@ -140,7 +141,7 @@ Red flags summary:
 - Impossibly broad business scope
 - Buzzword-heavy marketing
 - "Poverty reduction" emotional manipulation
-- Same admin as other high-risk projects
+- No independent verification across projects
 - No verifiable track record despite "2018" founding
 
 ## Recommendations
@@ -152,7 +153,7 @@ Red flags summary:
    - Business scope is impossibly broad
    - No verifiable operations or track record
    - MLM-style marketing language
-   - Administrator manages multiple high-risk projects
+   - No verifiable leadership or corporate governance
 
 2. **Verification Steps (All Will Likely Fail):**
    - Contact IMF directly about any relationship (none exists)
@@ -170,7 +171,7 @@ Red flags summary:
 
 ## Verdict
 
-**🔴 CRITICAL RISK (3.0/10)** - BG Wealth Sharing Investment Group exhibits classic investment scheme red flags. The claim to have been founded "with IMF guidance" is almost certainly fabricated - the IMF does not provide guidance to private investment groups. The impossibly broad scope of claimed operations (blockchain, futures, securities, insurance, banking, private equity, AND poverty reduction) is not credible for any legitimate organization. The heavy use of buzzword marketing (#SmartMoney, #GenerationalWealth, #PassiveIncome) targets unsophisticated investors seeking easy returns. The same administrator manages other high-risk projects. Avoid this investment completely.
+**🔴 CRITICAL RISK (3.0/10)** - BG Wealth Sharing Investment Group exhibits classic investment scheme red flags. The claim to have been founded "with IMF guidance" is almost certainly fabricated - the IMF does not provide guidance to private investment groups. The impossibly broad scope of claimed operations (blockchain, futures, securities, insurance, banking, private equity, AND poverty reduction) is not credible for any legitimate organization. The heavy use of buzzword marketing (#SmartMoney, #GenerationalWealth, #PassiveIncome) targets unsophisticated investors seeking easy returns. Avoid this investment completely.
 
 ---
 

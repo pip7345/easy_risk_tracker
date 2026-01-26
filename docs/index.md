@@ -24,7 +24,7 @@ Welcome to the Easy Risk Tracker comprehensive project risk assessment database.
 | Project | Category | Score | Risk Tier | Key Concerns |
 |---------|----------|-------|-----------|--------------|
 | [Bellator](projects/bellator) | Investment/MLM | 2.8 | 🔴 Critical | Anonymous leadership, unrealistic returns, legal risks |
-| [XUSD X1](projects/xusd_x1) | Stablecoin/DeFi | 0.5 | 🔴 Critical | Confirmed federal fraud case, platform down |
+| [XUSD X1](projects/xusd_x1) | Stablecoin/DeFi | 0.5 | 🔴 Critical | Confirmed federal fraud case, site active |
 | [Gradient](projects/gradient) | DePIN/Computing | 6.4 | 🟡 Moderate | Needs more liquidity and adoption data |
 | [Grass](projects/grass) | DePIN/Network | 7.2 | 🟡 Moderate | Strong concept, liquidity metrics unclear |
 | [Uprock](projects/uprock) | DePIN/Bandwidth | 6.5 | 🟡 Moderate | Early-stage adoption metrics limited |
@@ -47,13 +47,13 @@ Welcome to the Easy Risk Tracker comprehensive project risk assessment database.
 | [Bitton](projects/bitton) | L1/Consensus | 2.77 | 🔴 Critical | Long lockups, unclear reward source |
 | [SQWL](projects/sqwl) | Education Platform | 4.48 | 🟠 High | Limited verification of claims |
 | [Masterwealthbuilders](projects/masterwealthbuilders) | Financial Services/MLM | 4.0 | 🟠 High | Impossible investment claims |
-| [XSynergy](projects/xsynergy) | Investment/Matrix | 1.54 | 🔴 Critical | Matrix compensation, no admin disclosure |
+| [XSynergy](projects/xsynergy) | Investment/Matrix | 1.64 | 🔴 Critical | Matrix compensation, no verified team |
 | [Zionix Global](projects/zionix_global) | Investment/Forex | 1.15 | 🔴 Critical | Unverified AI trading claims |
 | [Tereth](projects/tereth) | DeFi/Token | 4.08 | 🟠 High | High tax tokenomics, unclear audits |
 | [Sosana](projects/sosana) | Meme/Token | 5.05 | 🟠 High | Meme speculation, leadership unclear |
 | [QuantumFi Global](projects/quantumfi_global) | Fintech/Payments | 4.79 | 🟠 High | No team bios or licensing proof |
 | [My Business Club](projects/my_business_club) | Education/MLM | 1.73 | 🔴 Critical | Heavy MLM structure, low transparency |
-| [Mario Lundqvist](projects/mario_lundqvist) | Promoter | 2.36 | 🔴 Critical | Promotes high-risk projects, conflicts of interest |
+| [Mario Lundqvist](projects/mario_lundqvist) | Trading Education | 2.55 | 🔴 Critical | Limited verification, AI trading claims |
 | [D.AI.SY](projects/daisey) | AI Trading | 3.85 | 🔴 Critical | Opaque performance, unclear leadership |
 | [BehindMLM](projects/behindmlm) | Review Site | N/A | 📰 Review | Informational watchdog site |
 

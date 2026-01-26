@@ -8,7 +8,7 @@
 | **Category** | AI Trading Signals/Education Platform |
 | **Website** | [mariolundqvist.com](https://mariolundqvist.com/) |
 | **Community** | Telegram (members only) |
-| **Admins** | Peter N, Nebojsa Romcevic |
+| **Founder** | Mario Lundqvist (named on website) |
 | **Likes** | 3 |
 | **Updates** | 0 |
 
@@ -21,12 +21,12 @@ Mario Lundqvist OÜ describes itself as a "global ecosystem where AI, education,
 ### 1. Leadership & Team (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team transparency | 4/10 | Two admins named, no detailed backgrounds |
-| Experience verification | 2/10 | No verifiable trading credentials |
-| Track record | 2/10 | Zero updates suggests minimal engagement |
-| Communication quality | 2/10 | No updates available |
+| Team transparency | 5/10 | Founder named; limited team bios |
+| Experience verification | 3/10 | No independently verified trading credentials |
+| Track record | 2/10 | No performance history published |
+| Communication quality | 3/10 | Active website with community channels |
 
-**Category Score: 2.5/10**
+**Category Score: 3.25/10**
 
 ### 2. Tokenomics & Financial Model (Weight: 15%)
 | Criteria | Score | Notes |
@@ -61,12 +61,12 @@ Mario Lundqvist OÜ describes itself as a "global ecosystem where AI, education,
 ### 5. Community & Engagement (Weight: 10%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Community size | 2/10 | Only 3 likes, minimal visible engagement |
-| Engagement quality | 1/10 | Zero updates posted |
+| Community size | 2/10 | Only 3 likes, limited visible engagement |
+| Engagement quality | 2/10 | Website active but no platform updates |
 | Growth trajectory | 2/10 | Stagnant presence |
-| Feedback mechanisms | 2/10 | Telegram access restricted to members |
+| Feedback mechanisms | 3/10 | Member-only Telegram/Facebook groups |
 
-**Category Score: 1.75/10**
+**Category Score: 2.25/10**
 
 ### 6. Technical Infrastructure (Weight: 15%)
 | Criteria | Score | Notes |
@@ -83,10 +83,10 @@ Mario Lundqvist OÜ describes itself as a "global ecosystem where AI, education,
 |----------|-------|-------|
 | Regulatory status | 3/10 | Estonian OÜ is legitimate structure |
 | Financial disclosures | 1/10 | No trading performance data |
-| Operational clarity | 2/10 | Vague service descriptions |
+| Operational clarity | 3/10 | Products and membership structure outlined |
 | Legal structure | 4/10 | OÜ (Estonian company) named |
 
-**Category Score: 2.5/10**
+**Category Score: 2.75/10**
 
 ### 8. Personal Investment Factors (Weight: 5%)
 | Criteria | Score | Notes |
@@ -104,16 +104,16 @@ Mario Lundqvist OÜ describes itself as a "global ecosystem where AI, education,
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership | 15% | 2.5 | 0.375 |
+| Leadership | 15% | 3.25 | 0.488 |
 | Tokenomics | 15% | 3.0 | 0.450 |
 | Earning | 10% | 2.0 | 0.200 |
 | Liquidity | 20% | 3.0 | 0.600 |
-| Community | 10% | 1.75 | 0.175 |
+| Community | 10% | 2.25 | 0.225 |
 | Technical | 15% | 1.33 | 0.200 |
-| Transparency | 10% | 2.5 | 0.250 |
+| Transparency | 10% | 2.75 | 0.275 |
 | Personal | 5% | 2.25 | 0.113 |
 
-### **FINAL SCORE: 2.36/10** 🔴 VERY HIGH RISK
+### **FINAL SCORE: 2.55/10** 🔴 VERY HIGH RISK
 
 ---
 
@@ -125,15 +125,16 @@ Mario Lundqvist OÜ describes itself as a "global ecosystem where AI, education,
 4. **AI Trading Promises**: High-risk area with frequent scams
 5. **No Performance Data**: No track record or verified results
 6. **Telegram-Only Access**: Creates information asymmetry
-7. **Vague Team Backgrounds**: Admins named but not verified
-8. **No Risk Disclosures**: Trading involves significant risk not mentioned
+7. **Vague Team Backgrounds**: Limited verifiable leadership bios
+8. **No Performance Data**: Results are not independently verified
 
 ---
 
 ## Positive Indicators ✅
 
 1. **Estonian OÜ Structure**: Legitimate company registration format
-2. **Named Admins**: Two individuals disclosed
+2. **Named Founder**: Public founder attribution on site
+3. **Risk Disclosures**: Legal risk statements are provided
 3. **Clear Service Description**: Trading + education focus is defined
 4. **No Extreme Yield Promises**: Avoids specific ROI claims in description
 

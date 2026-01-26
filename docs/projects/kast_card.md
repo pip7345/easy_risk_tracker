@@ -17,7 +17,7 @@ Kast Card is a fintech/crypto-card product that allows users to spend stablecoin
 
 **Tags:** CryptoCard, DePINPayments, SpendCrypto, Web3Finance, CashbackRewards, CryptoLifestyle
 
-**Admins:** Damien Ramos, Patty Edgecombe, Benjamin Funsch
+**iiZR Analysts:** Damien Ramos, Patty Edgecombe, Benjamin Funsch
 
 ---
 
@@ -26,14 +26,14 @@ Kast Card is a fintech/crypto-card product that allows users to spend stablecoin
 ### 1. Leadership & Team Transparency (15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Founders publicly identified | 6/10 | Multiple named admins with profile photos |
-| Team background verifiable | 5/10 | Names available but no LinkedIn verification shown |
+| Founders publicly identified | 3/10 | No verified founder bios |
+| Team background verifiable | 4/10 | No leadership LinkedIn or credentials shown in sources |
 | Advisory board disclosed | 5/10 | $10M seed round from Peak XV, DST Global mentioned |
 | Company registration transparent | 6/10 | Appears to be registered company with banking partnerships |
 
-**Category Score: 5.5/10**
+**Category Score: 4.5/10**
 
-*Justification: The project has named team members and has raised $10M from reputable VCs (Peak XV, DST Global), which provides credibility. However, detailed team backgrounds aren't readily available in the source material.*
+*Justification: The project has VC backing, but leadership identities are not verified in the available sources.*
 
 ### 2. Tokenomics & Financial Model (15%)
 | Criteria | Score | Notes |
@@ -74,12 +74,12 @@ Kast Card is a fintech/crypto-card product that allows users to spend stablecoin
 ### 5. Community & Social Proof (10%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Active community size | 6/10 | Active Twitter presence; 5 upvotes on platform |
+| Active community size | 7/10 | 500k users claimed on site; active social presence |
 | Social media presence | 7/10 | Active Twitter account with regular engagement |
 | Community engagement quality | 6/10 | 15+ detailed updates over 4 months |
 | User testimonials | 5/10 | Updates mention features but limited testimonials |
 
-**Category Score: 6.0/10**
+**Category Score: 6.5/10**
 
 *Justification: The project maintains active social media and communication. The backing from major VCs (Peak XV, DST Global) provides institutional social proof beyond retail users.*
 
@@ -98,12 +98,12 @@ Kast Card is a fintech/crypto-card product that allows users to spend stablecoin
 ### 7. Transparency & Communication (10%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Regular updates | 8/10 | Very frequent updates (15+ over 4 months) |
+| Regular updates | 8/10 | Active product site and updates |
 | Clear roadmap | 7/10 | KAST Business 2026, Global Payouts, Savings features planned |
 | Financial reporting | 5/10 | VC funding disclosed but no regular financial reports |
-| Response to concerns | 6/10 | Detailed update explanations; support resources available |
+| Response to concerns | 7/10 | Support resources and legal disclosures available |
 
-**Category Score: 6.5/10**
+**Category Score: 7.0/10**
 
 *Justification: Communication is strong with regular product updates, feature announcements, and promotional campaigns. The roadmap is clear with specific features planned for 2026.*
 
@@ -124,22 +124,22 @@ Kast Card is a fintech/crypto-card product that allows users to spend stablecoin
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership & Team | 15% | 5.5 | 0.83 |
+| Leadership & Team | 15% | 4.5 | 0.68 |
 | Tokenomics | 15% | 5.5 | 0.83 |
 | Earning Mechanism | 10% | 6.75 | 0.68 |
 | Liquidity & Exit | 20% | 6.25 | 1.25 |
-| Community | 10% | 6.0 | 0.60 |
+| Community | 10% | 6.5 | 0.65 |
 | Technical Security | 15% | 6.0 | 0.90 |
-| Transparency | 10% | 6.5 | 0.65 |
+| Transparency | 10% | 7.0 | 0.70 |
 | Personal Factors | 5% | 7.0 | 0.35 |
 
-### **FINAL SCORE: 6.09/10**
+### **FINAL SCORE: 6.04/10**
 
 ---
 
 ## Risk Rating: 🟡 MODERATE RISK
 
-This is a legitimate fintech product with strong VC backing, but carries moderate risk due to the crypto-native elements and points-to-token conversion uncertainty.
+This is a legitimate fintech product with strong VC backing, but carries moderate risk due to limited leadership verification and points-to-token conversion uncertainty.
 
 ---
 

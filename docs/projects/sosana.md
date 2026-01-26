@@ -8,7 +8,7 @@
 | **Category** | Meme Token (Solana) |
 | **Website** | [sosana.io](https://sosana.io/) |
 | **Litepaper** | [SOSANA Litepaper](https://sosana.io/wp-content/uploads/2025/09/SOSANA_Litepaper_v2.0.pdf) |
-| **iiZR Analysts** | Damien Ramos, Miqoshi Onvani, Andre' Normann (platform analysts, not project leadership) |
+| **iiZR Analysts** | Damien Ramos, Miqoshi Onvani, Andre' Normann |
 | **Community** | [X/Twitter](https://x.com/sosanatoken), [Discord](https://discord.gg/hJCphKYCsz), [Telegram](https://t.me/SosanaToken) |
 | **Token** | SOSANA |
 | **DEX** | [Raydium Swap Link](https://raydium.io/swap/?pool=ASk8js1ZXfhx16prbntnmx5NiH4Eh6QaNmoTVJHX9R55&inputMint=sol&outputMint=49jdQxUkKtuvorvnwWqDzUoYKEjfgroTzHkQqXG9YFMj) |
@@ -22,7 +22,7 @@ SOSANA is a satirical Solana meme token built around â€œShiny Object Syndrome.â€
 ### 1. Leadership & Team (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Identity & transparency | 4.5/10 | No clear leadership bios on the main site; iiZR admins are analysts |
+| Identity & transparency | 4.5/10 | No clear leadership bios on the main site |
 | Track record | 4.5/10 | No verifiable track record disclosed |
 | Regulatory & legal standing | 5.0/10 | Legal terms and LLC address listed, but no formal regulatory status |
 | Communication & accessibility | 4.0/10 | Active community channels; leadership visibility limited |

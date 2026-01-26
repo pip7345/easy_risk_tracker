@@ -33,7 +33,7 @@ tags: [critical-risk, defi, dao, paused-withdrawals, unsustainable-apy]
 | **Category** | DAO DeFi Protocol |
 | **Blockchain** | BSC (Binance Smart Chain) |
 | **Token** | $VVA |
-| **Admin** | Miqoshi Onvani |
+| **iiZR Analyst** | Miqoshi Onvani |
 | **Tags** | EarnWhileYouSleep, ProfitWithoutPermission, AutoCompoundEvery8Hours, DefyDepositProsper |
 
 <div className="red-flags">
@@ -68,10 +68,9 @@ tags: [critical-risk, defi, dao, paused-withdrawals, unsustainable-apy]
 ## Category Breakdown
 
 ### Leadership & Team (2.0/10)
-**SCORE: 2.0** - Single admin, connected to other high-risk projects
+**SCORE: 2.0** - Leadership not verified
 
-- Miqoshi Onvani sole administrator
-- Same admin manages BG Wealth Sharing and other questionable projects
+- No verified leadership bios or credentials disclosed
 - No technical team visible
 - No verifiable professional background
 - Leadership stretched across multiple similar projects
@@ -135,7 +134,7 @@ tags: [critical-risk, defi, dao, paused-withdrawals, unsustainable-apy]
 Critical indicators:
 - Paused withdrawals = funds potentially already gone
 - Unsustainable APY promises
-- Same admin as other high-risk projects
+- Opaque leadership with no verifiable credentials
 - Marketing targets unsophisticated investors
 - "Contract upgrade" during locked funds is textbook exit scam
 
@@ -158,12 +157,12 @@ Critical indicators:
 3. **Warning Signs Review:**
    - Withdrawal pause = liquidity crisis or rug pull
    - Extreme APY promises = Ponzi structure
-   - Single admin across multiple similar projects = red flag
+   - Opaque leadership with no verifiable credentials
    - Marketing buzzwords over technical substance = targeting naive investors
 
 ## Verdict
 
-**🔴 CRITICAL RISK (2.0/10)** - Veritas Vault has **paused withdrawals and swaps**, which is the single most critical red flag in DeFi. Combined with promised returns of ~0.44% per 8-hour rebase (~481% APY), this project exhibits textbook Ponzi/exit scam characteristics. The "contract upgrade" explanation for locked funds is a common excuse used before rug pulls. The same administrator manages other high-risk projects, and the marketing language ("EarnWhileYouSleep", "ProfitWithoutPermission") targets unsophisticated investors. If you have funds in this protocol, prepare for potential total loss. Do not invest any new funds under any circumstances.
+**🔴 CRITICAL RISK (2.0/10)** - Veritas Vault has **paused withdrawals and swaps**, which is the single most critical red flag in DeFi. Combined with promised returns of ~0.44% per 8-hour rebase (~481% APY), this project exhibits textbook Ponzi/exit scam characteristics. The "contract upgrade" explanation for locked funds is a common excuse used before rug pulls. Leadership is opaque, and the marketing language ("EarnWhileYouSleep", "ProfitWithoutPermission") targets unsophisticated investors. If you have funds in this protocol, prepare for potential total loss. Do not invest any new funds under any circumstances.
 
 ---
 

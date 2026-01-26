@@ -7,7 +7,7 @@
 | **Category** | Web3 Information Aggregator / Investment Platform |
 | **Website** | [iizr.app](https://iizr.app) |
 | **Twitter** | [@iizrapp](https://x.com/iizrapp) |
-| **Admin** | Miqoshi Onvani |
+| **iiZR Analyst** | Miqoshi Onvani |
 | **Platform** | iiZR (Interactive Intelligence Zulu Romeo) |
 | **Business Model** | Subscription-based Web3 insights platform |
 
@@ -23,13 +23,13 @@ The iiZR Playbook appears to be the subscription content portion of the service,
 ### 1. Leadership & Track Record (15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team Identity | 4/10 | Only one admin identified (Miqoshi Onvani) - appears in other high-risk projects on this platform |
+| Team Identity | 3/10 | No verified leadership profiles |
 | Professional Background | 3/10 | No verifiable professional credentials, LinkedIn, or corporate history |
-| Past Project History | 2/10 | Admin also associated with Builder (DeFi staking) - another high-risk project |
+| Past Project History | 2/10 | No verifiable leadership track record disclosed |
 | Transparency | 4/10 | Single individual managing multiple unrelated projects raises concerns |
 | Community Engagement | 5/10 | 1 update visible, subscription model gates most content |
 
-**Category Score: 3.6/10**
+**Category Score: 2.6/10**
 
 ---
 
@@ -128,7 +128,7 @@ The iiZR Playbook appears to be the subscription content portion of the service,
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership & Track Record | 15% | 3.6 | 0.54 |
+| Leadership & Track Record | 15% | 2.6 | 0.39 |
 | Tokenomics & Sustainability | 15% | 4.0 | 0.60 |
 | Earning Mechanism | 10% | 4.6 | 0.46 |
 | Liquidity & Exit Strategy | 20% | 7.0 | 1.40 |
@@ -137,20 +137,20 @@ The iiZR Playbook appears to be the subscription content portion of the service,
 | Transparency & Communication | 10% | 3.2 | 0.32 |
 | Personal Risk Assessment | 5% | 5.2 | 0.26 |
 
-### **TOTAL SCORE: 4.48/10** 🟠 HIGH RISK
+### **TOTAL SCORE: 4.33/10** 🟠 HIGH RISK
 
 ---
 
 ## Risk Rating: 🟠 HIGH RISK
 
 ### Key Concerns
-1. **Unknown Team** - Single admin (Miqoshi Onvani) also manages other high-risk projects
+1. **Unknown Team** - No verified leadership profiles or company team page
 2. **Value Proposition Unclear** - Many free alternatives exist for Web3 news aggregation
 3. **No Corporate Structure** - No company information, registration, or legal entity disclosed
 4. **Gated Content** - Subscription required to evaluate actual content quality
 5. **Limited Community** - Minimal engagement metrics (3 likes visible)
 6. **Recent Technical Issues** - Ethereum wallet connect bug recently fixed
-7. **Cross-Project Admin** - Same admin appears on Builder (a 🔴 Very High Risk project)
+7. **Opaque Ownership** - No disclosed ownership or legal entity details
 
 ### Positive Factors
 1. **Clear Business Model** - Subscription-based, no complex token mechanics
@@ -175,7 +175,7 @@ The iiZR Playbook appears to be the subscription content portion of the service,
 ---
 
 ## Verdict
-iiZR Playbook presents a legitimate concept (Web3 information aggregation) but lacks the transparency and track record to warrant confidence. The association of the admin with other high-risk projects on this platform is concerning. The subscription model itself is lower risk than token-based investments, but the value proposition compared to free alternatives remains unproven.
+iiZR Playbook presents a legitimate concept (Web3 information aggregation) but lacks the transparency and track record to warrant confidence. Leadership identities are not verified. The subscription model itself is lower risk than token-based investments, but the value proposition compared to free alternatives remains unproven.
 
 **Recommendation:** Avoid subscription until team transparency improves and content quality can be independently verified.
 

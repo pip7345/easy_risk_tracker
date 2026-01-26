@@ -8,11 +8,11 @@ tags: [moderate-risk, depin, bandwidth, solana, ai-data]
 
 <div className="risk-badge risk-moderate">MODERATE RISK</div>
 
-**Final Score: 7.2 / 10**
+**Final Score: 7.1 / 10**
 
 | Category | Score | Weight | Weighted |
 |----------|-------|--------|----------|
-| Leadership & Team | 7.0 | 15% | 1.05 |
+| Leadership & Team | 6.0 | 15% | 0.90 |
 | Tokenomics | 7.0 | 15% | 1.05 |
 | Earning Mechanism | 7.5 | 10% | 0.75 |
 | Liquidity & Market | 7.5 | 20% | 1.50 |
@@ -20,7 +20,7 @@ tags: [moderate-risk, depin, bandwidth, solana, ai-data]
 | Technical Quality | 7.0 | 15% | 1.05 |
 | Transparency | 7.0 | 10% | 0.70 |
 | Personal Assessment | 7.0 | 5% | 0.35 |
-| **TOTAL** | | **100%** | **7.2** |
+| **TOTAL** | | **100%** | **7.1** |
 
 ---
 
@@ -32,7 +32,7 @@ tags: [moderate-risk, depin, bandwidth, solana, ai-data]
 | **Category** | DePIN / Bandwidth / Data Infrastructure |
 | **Token** | GRASS (Solana) |
 | **Blockchain** | Solana |
-| **Admin(s)** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
+| **iiZR Analysts** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
 | **Website** | grass.io |
 | **Social** | Twitter: @grass, Discord |
 
@@ -87,13 +87,13 @@ tags: [moderate-risk, depin, bandwidth, solana, ai-data]
 
 ## 📊 Category Breakdown
 
-### 1. Leadership & Team (Score: 7.0/10)
+### 1. Leadership & Team (Score: 6.0/10)
 
 **Assessment:** Good
 
 | Factor | Finding |
 |--------|---------|
-| Identity Verification | Three admins with Google profile photos |
+| Identity Verification | No verified leadership profiles |
 | Corporate Structure | Grass Foundation + Wynd Labs service provider |
 | Communication | Regular Token Holder Calls, community updates |
 | Accessibility | Active Discord, public calls with Q&A |

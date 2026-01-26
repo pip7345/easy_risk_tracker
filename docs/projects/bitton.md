@@ -8,7 +8,7 @@
 | **Category** | Layer-1 Blockchain / PoS + PoP Consensus |
 | **Website** | [bitton.ai](https://bitton.ai) |
 | **Telegram** | [bitton_ai_channel](https://t.me/bitton_ai_channel) |
-| **Admin** | Andre' Normann |
+| **iiZR Analyst** | Andre' Normann |
 | **Foundation** | BitTon.AI Foundation |
 | **Consensus** | Hybrid Proof-of-Stake + Proof-of-Participation |
 
@@ -29,13 +29,13 @@ The BitTon.AI Foundation oversees ecosystem expansion by "funding development, v
 ### 1. Leadership & Track Record (15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team Identity | 4/10 | Admin Andre' Normann visible (also manages ZPLN) |
+| Team Identity | 3/10 | No verified leadership profiles |
 | Professional Background | 3/10 | No verifiable professional credentials |
-| Past Project History | 3/10 | Same admin runs ZPLN - pattern of multiple projects |
+| Past Project History | 3/10 | No verifiable leadership track record provided |
 | Transparency | 4/10 | Foundation mentioned but no registration details |
 | Community Engagement | 4/10 | 0 likes, 1 update in 2 months |
 
-**Category Score: 3.6/10**
+**Category Score: 2.6/10**
 
 ---
 
@@ -55,13 +55,13 @@ The BitTon.AI Foundation oversees ecosystem expansion by "funding development, v
 ### 3. Earning Mechanism (10%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Reward Source | 3/10 | "Compounding rewards through coded mechanism" - vague |
-| Clarity | 2/10 | 135-day mechanism poorly explained |
-| Participant Risk | 3/10 | Liquidity-backed participation = capital at risk |
-| Sustainability | 3/10 | Where do rewards come from if fixed supply? |
-| Market Dependency | 4/10 | Tied to crypto market conditions |
+| Reward Source | 2/10 | 224% per 135 days claim suggests unsustainable incentives |
+| Clarity | 2/10 | 135-day mechanism still poorly explained |
+| Participant Risk | 2/10 | Liquidity-backed participation = capital at risk |
+| Sustainability | 2/10 | Fixed supply conflicts with high reward promises |
+| Market Dependency | 3/10 | Tied to crypto market conditions |
 
-**Category Score: 3.0/10**
+**Category Score: 2.2/10**
 
 ---
 
@@ -134,16 +134,16 @@ The BitTon.AI Foundation oversees ecosystem expansion by "funding development, v
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership & Track Record | 15% | 3.6 | 0.54 |
+| Leadership & Track Record | 15% | 2.6 | 0.39 |
 | Tokenomics & Sustainability | 15% | 3.2 | 0.48 |
-| Earning Mechanism | 10% | 3.0 | 0.30 |
+| Earning Mechanism | 10% | 2.2 | 0.22 |
 | Liquidity & Exit Strategy | 20% | 2.0 | 0.40 |
 | Community & Ecosystem | 10% | 2.5 | 0.25 |
 | Technical Infrastructure | 15% | 3.0 | 0.45 |
 | Transparency & Communication | 10% | 2.5 | 0.25 |
 | Personal Risk Assessment | 5% | 2.0 | 0.10 |
 
-### **TOTAL SCORE: 2.77/10** 🔴 VERY HIGH RISK
+### **TOTAL SCORE: 2.54/10** 🔴 VERY HIGH RISK
 
 ---
 
@@ -152,9 +152,9 @@ The BitTon.AI Foundation oversees ecosystem expansion by "funding development, v
 ### Major Red Flags
 1. **135-Day Lock Cycles** - Extended lock-up periods are major liquidity risk
 2. **"Liquidity-Backed Participation"** - Requirement to provide liquidity may trap funds
-3. **Unclear Reward Source** - Fixed supply + compounding rewards = unsustainable math
+3. **Unrealistic Rewards** - 224% per 135 days is unsustainable
 4. **Zero Community Engagement** - 0 likes indicates minimal actual interest
-5. **Multi-Project Admin** - Same admin (Andre' Normann) runs ZPLN
+5. **Leadership Not Verified** - No leadership credentials disclosed
 6. **No Audits Published** - "Auditable" mentioned but no actual audits
 7. **Vague Technology Claims** - Hybrid consensus not technically validated
 8. **No Exchange Listings** - Extremely limited trading options expected
@@ -183,7 +183,7 @@ The BitTon.AI Foundation oversees ecosystem expansion by "funding development, v
 ---
 
 ## Verdict
-BitTon presents technical concepts (hybrid consensus, energy efficiency) that sound sophisticated but are not validated with evidence. The 135-day staking cycles combined with "liquidity-backed participation" requirements create significant capital trap risk. The zero community engagement and single admin managing multiple projects are concerning patterns.
+BitTon presents technical concepts (hybrid consensus, energy efficiency) that sound sophisticated but are not validated with evidence. The 135-day staking cycles combined with "liquidity-backed participation" requirements create significant capital trap risk. The zero community engagement and lack of verified leadership are concerning patterns.
 
 The mathematics of "fixed supply" + "compounding rewards" raises fundamental sustainability questions that are not addressed. Without clear explanation of where staking rewards originate, this structure may be unsustainable.
 

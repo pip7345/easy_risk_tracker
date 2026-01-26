@@ -9,7 +9,7 @@
 | **Website** | None listed |
 | **Twitter** | [@official37888](https://x.com/official37888) |
 | **Telegram** | [userguidembcbot](https://t.me/userguidembcbot) |
-| **Admin** | Andre' Normann |
+| **iiZR Analyst** | Andre' Normann |
 | **Likes** | 2 |
 | **Updates** | 1 |
 
@@ -22,12 +22,12 @@ My Business Club (MBC) is a "private membership platform" for entrepreneurs. Key
 ### 1. Leadership & Team (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team transparency | 3/10 | Single admin (Andre' Normann) - appears on multiple projects |
+| Team transparency | 2/10 | No verified leadership profiles |
 | Experience verification | 2/10 | No verifiable business background |
-| Track record | 2/10 | Admin also runs ZPLN and BitTon - high risk association |
+| Track record | 2/10 | No verifiable leadership track record provided |
 | Communication quality | 3/10 | Single update posted |
 
-**Category Score: 2.5/10**
+**Category Score: 1.5/10**
 
 ### 2. Tokenomics & Financial Model (Weight: 15%)
 | Criteria | Score | Notes |
@@ -105,7 +105,7 @@ My Business Club (MBC) is a "private membership platform" for entrepreneurs. Key
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership | 15% | 2.5 | 0.375 |
+| Leadership | 15% | 1.5 | 0.225 |
 | Tokenomics | 15% | 2.0 | 0.300 |
 | Earning | 10% | 1.0 | 0.100 |
 | Liquidity | 20% | 2.0 | 0.400 |
@@ -114,14 +114,14 @@ My Business Club (MBC) is a "private membership platform" for entrepreneurs. Key
 | Transparency | 10% | 1.25 | 0.125 |
 | Personal | 5% | 1.25 | 0.063 |
 
-### **FINAL SCORE: 1.73/10** 🔴 CRITICAL RISK
+### **FINAL SCORE: 1.58/10** 🔴 CRITICAL RISK
 
 ---
 
 ## Major Red Flags 🚩
 
 1. **Classic MLM Structure**: "Every sale and connection you make pays out" - recruitment-based earnings
-2. **Andre' Normann Multi-Project**: Admin also runs ZPLN and BitTon (both high-risk)
+2. **No Verified Leadership**: No team credentials or leadership bios disclosed
 3. **"Global Profit Sharing"**: Vague profit mechanism typical of Ponzi structures
 4. **Smart Contract Pay Without Verification**: Unaudited payment mechanism
 5. **"No Middlemen" Claims**: Often used to avoid regulatory oversight
@@ -151,7 +151,7 @@ My Business Club (MBC) is a "private membership platform" for entrepreneurs. Key
 6. **Remove MLM Language**: Distance from recruitment messaging
 7. **Independent Website**: Establish standalone web presence
 8. **Verified Value Proposition**: Clear services beyond membership
-9. **Team Transparency**: Background verification for admins
+9. **Team Transparency**: Background verification for leadership team
 10. **Risk Disclosures**: Clear warnings about earning potential
 
 ---

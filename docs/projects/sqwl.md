@@ -7,8 +7,9 @@
 | **Name** | SQWL |
 | **Category** | Crypto Education Platform |
 | **Website** | [sqwl.ai](http://sqwl.ai/) |
+| **Site Access** | HTTP 200 reachable; AI crawler could not parse. No Cloudflare detected in headers. |
 | **Community** | [Discord](https://discord.gg/cQXtMKzf) |
-| **Admin** | Miqoshi Onvani |
+| **iiZR Analyst** | Miqoshi Onvani |
 | **Likes** | 9 |
 | **Updates** | 7 |
 
@@ -21,12 +22,12 @@ SQWL positions itself as the "Gold Standard of Crypto Education" built on propri
 ### 1. Leadership & Team (Weight: 15%)
 | Criteria | Score | Notes |
 |----------|-------|-------|
-| Team transparency | 4/10 | Single admin visible (Miqoshi Onvani), instructor Damien Ramos mentioned |
+| Team transparency | 3/10 | No verified leadership profiles |
 | Experience verification | 3/10 | No verifiable background information provided |
-| Track record | 4/10 | Admin appears on multiple iiZR projects; connected to iiZR ecosystem |
+| Track record | 3/10 | No verifiable leadership track record disclosed |
 | Communication quality | 6/10 | Regular updates with educational content recaps |
 
-**Category Score: 4.25/10**
+**Category Score: 3.25/10**
 
 ### 2. Tokenomics & Financial Model (Weight: 15%)
 | Criteria | Score | Notes |
@@ -104,7 +105,7 @@ SQWL positions itself as the "Gold Standard of Crypto Education" built on propri
 
 | Category | Weight | Score | Weighted |
 |----------|--------|-------|----------|
-| Leadership | 15% | 4.25 | 0.638 |
+| Leadership | 15% | 3.25 | 0.488 |
 | Tokenomics | 15% | 5.0 | 0.750 |
 | Earning | 10% | 4.5 | 0.450 |
 | Liquidity | 20% | 5.0 | 1.000 |
@@ -113,13 +114,13 @@ SQWL positions itself as the "Gold Standard of Crypto Education" built on propri
 | Transparency | 10% | 3.25 | 0.325 |
 | Personal | 5% | 4.75 | 0.238 |
 
-### **FINAL SCORE: 4.48/10** 🟠 HIGH RISK
+### **FINAL SCORE: 4.33/10** 🟠 HIGH RISK
 
 ---
 
 ## Major Red Flags 🚩
 
-1. **Miqoshi Onvani Admin Connection**: Same admin manages multiple high-risk projects on iiZR platform (Builder, iiZR Playbook, TEXITcoin)
+1. **Leadership Not Verified**: No documented team credentials or leadership bios
 2. **Proprietary "Gogical" Methods**: Unverified educational methodology with no external validation
 3. **Vague Earning Claims**: "Earn More" messaging without clear mechanisms
 4. **No Team Background Verification**: Instructors mentioned but credentials not verifiable
@@ -147,7 +148,7 @@ SQWL positions itself as the "Gold Standard of Crypto Education" built on propri
 3. **External Validation**: Third-party review of educational methodology
 4. **Financial Transparency**: Company registration and business structure
 5. **Clear Earning Mechanisms**: Explicit documentation on how users "Earn More"
-6. **Separate Admin Identity**: Reduce association with high-risk projects
+6. **Leadership Disclosure**: Provide verifiable team bios and credentials
 7. **Student Testimonials**: Verifiable success stories with outcomes
 8. **Accreditation**: Seek educational certification or recognition
 

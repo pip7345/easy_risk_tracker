@@ -8,11 +8,11 @@ tags: [moderate-risk, depin, decentralized-storage, web3-storage, pending-token]
 
 <div className="risk-badge risk-moderate">MODERATE RISK</div>
 
-**Final Score: 6.2 / 10**
+**Final Score: 6.1 / 10**
 
 | Category | Score | Weight | Weighted |
 |----------|-------|--------|----------|
-| Leadership & Team | 6.0 | 15% | 0.90 |
+| Leadership & Team | 5.0 | 15% | 0.75 |
 | Tokenomics | 5.5 | 15% | 0.83 |
 | Earning Mechanism | 6.5 | 10% | 0.65 |
 | Liquidity & Market | 5.5 | 20% | 1.10 |
@@ -20,7 +20,7 @@ tags: [moderate-risk, depin, decentralized-storage, web3-storage, pending-token]
 | Technical Quality | 7.0 | 15% | 1.05 |
 | Transparency | 6.5 | 10% | 0.65 |
 | Personal Assessment | 6.0 | 5% | 0.30 |
-| **TOTAL** | | **100%** | **6.2** |
+| **TOTAL** | | **100%** | **6.1** |
 
 ---
 
@@ -32,7 +32,7 @@ tags: [moderate-risk, depin, decentralized-storage, web3-storage, pending-token]
 | **Category** | DePIN / Decentralized Storage / Web3 Infrastructure |
 | **Token** | DeNet Token (PENDING - not yet launched, airdrop planned) |
 | **Secondary Token** | TBY (storage token), $REACT (earned by Watchers) |
-| **Admin(s)** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
+| **iiZR Analysts** | Damien Ramos, Patty Edgecombe, Benjamin Funsch |
 | **Website** | watchernode.denet.app |
 | **Social** | Twitter: @DeNetPro, Discord |
 
@@ -57,7 +57,7 @@ tags: [moderate-risk, depin, decentralized-storage, web3-storage, pending-token]
 
 5. **Protocol v4 Still Testing**: Storage Protocol v4 in testing phase - not production ready
 
-6. **Same Admin Team**: Shares administrators with multiple other DePIN projects
+6. **Leadership Disclosure Gap**: No verified leadership profiles or company leadership page
 
 </div>
 
@@ -87,24 +87,22 @@ tags: [moderate-risk, depin, decentralized-storage, web3-storage, pending-token]
 
 ## 📊 Category Breakdown
 
-### 1. Leadership & Team (Score: 6.0/10)
+### 1. Leadership & Team (Score: 5.0/10)
 
 **Assessment:** Moderate
 
 | Factor | Finding |
 |--------|---------|
-| Identity Verification | Three admins with Google profile photos |
+| Identity Verification | No verified leadership profiles |
 | Team Size | Not disclosed |
 | Track Record | Limited public history |
 | Accessibility | Active Discord and community channels |
 
 **Strengths:**
-- Multiple admins managing community
 - Education Program shows commitment to onboarding
 - Active communication about development progress
 
 **Concerns:**
-- Same admin team across multiple DePIN projects
 - No detailed team page with professional backgrounds
 - Core development team not publicly identified
 
