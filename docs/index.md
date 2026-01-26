@@ -8,28 +8,17 @@ slug: /
 
 Comprehensive investment risk analysis with our 8-category scoring system. Each project gets evaluated across leadership credibility, tokenomics, earning mechanisms, liquidity, community health, technical foundation, transparency, and your personal risk exposure - all scored 0-10.
 
-## Leadership Credibility
-Track record & transparency
+**What We Measure:**
+- **Leadership Credibility** - Track record & transparency
+- **Tokenomics & Utility** - Real use case analysis
+- **Earning Mechanisms** - Revenue sustainability assessment
+- **Liquidity & Access** - Exit strategy viability
+- **Community Health** - Cult vs community detection
+- **Technical Foundation** - Security & code quality
+- **Transparency** - Documentation & communication
+- **Personal Risk Profile** - Your exposure and liquidity needs
 
-## Tokenomics & Utility
-Real use case analysis
-
-## Liquidity & Access
-Exit strategy assessment
-
-## Community Health
-Cult vs community detection
-
-## 8-Category Scoring
-Comprehensive 0-10 risk scores across all categories
-
-## Personal Risk Profile
-Assess your exposure and liquidity needs
-
-## Real-time Monitoring
-Continuous tracking of all risk factors
-
-## 📋 All Project Scores
+## 📋 Project Risk Overview
 
 | Project | Category | Score | Risk Tier | Key Concerns |
 |---------|----------|-------|-----------|--------------|
