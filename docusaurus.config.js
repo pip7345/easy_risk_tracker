@@ -45,6 +45,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/social-card.jpg',
+      colorMode: {
+        defaultMode: 'dark',
+      },
       navbar: {
         title: 'Easy Risk Tracker',
         logo: {

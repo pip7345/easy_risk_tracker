@@ -14,6 +14,9 @@ The Easy Risk Tracker uses an **8-category weighted scoring system** that evalua
 **Important Note on iiZR Admin Tags:**
 The “Admin” or named person shown in the iiZR scraped pages may be a **platform analyst** who posts updates, not the project’s leadership. Leadership scores are based on **verifiable project team information**, not iiZR analyst names.
 
+**Gated Information Policy:**
+When critical details (team credentials, tokenomics, pricing, terms) are only available after registration or behind a paywall, the project receives lower Transparency/Tokenomics scores. If a token is suspected but not explicitly disclosed on public pages, this is treated as a risk factor until verified.
+
 ---
 
 ## Scoring Categories
