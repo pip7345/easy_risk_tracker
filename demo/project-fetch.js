@@ -3,19 +3,6 @@ const REST_BASE = `${SUPABASE_URL}/rest/v1`;
 const AUTH_URL = `${SUPABASE_URL}/auth/v1/token?grant_type=password`;
 const ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh4cXlqbW13eXpkYXh0c2x1dG9wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI0MzU5NzEsImV4cCI6MjA2ODAxMTk3MX0.Oqdcgm7pqN4fWa6811cBn6afaIUH4QBSYp23oEx7bSY';
 
-const form = document.getElementById('fetch-form');
-const output = document.getElementById('output');
-const fetchPanel = document.getElementById('fetch-panel');
-
-
-function updateProjectInfo(text) {
-  window.projectInfoText = text;
-  window.dispatchEvent(
-    new CustomEvent('projectInfoUpdated', {
-      detail: { hasData: Boolean(text) },
-    })
-  );
-}
 
 function buildRestUrl(table, params) {
   const url = new URL(`${REST_BASE}/${table}`);
@@ -151,25 +138,13 @@ async function fetchProjectData(projectId, headers) {
   };
 }
 
-form.addEventListener('submit', async event => {
-  event.preventDefault();
+async function fetchProjectInfo({ email, password, projectId }) {
+  const accessToken = await login(email, password);
+  const headers = authHeaders(accessToken);
+  const data = await fetchProjectData(projectId, headers);
+  return JSON.stringify(data, null, 2);
+}
 
-  const email = document.getElementById('email').value.trim();
-  const password = document.getElementById('password').value;
-  const projectId = document.getElementById('project-id').value.trim();
-
-  output.textContent = 'Fetching...';
-  fetchPanel.open = true;
-
-  try {
-    const accessToken = await login(email, password);
-    const headers = authHeaders(accessToken);
-    const data = await fetchProjectData(projectId, headers);
-    const pretty = JSON.stringify(data, null, 2);
-    output.textContent = pretty;
-    updateProjectInfo(pretty);
-  } catch (error) {
-    output.textContent = error.message || String(error);
-    updateProjectInfo('');
-  }
-});
+window.projectFetchApi = {
+  fetchProjectInfo,
+};
