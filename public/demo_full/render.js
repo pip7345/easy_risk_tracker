@@ -13,7 +13,8 @@ const websiteLink = document.getElementById('website-link');
 const joinLink = document.getElementById('join-link');
 const userEmail = document.getElementById('user-email');
 const aiRunButton = document.getElementById('ai-run');
-const aiAction = document.getElementById('ai-action');
+const aiRunSection = document.getElementById('ai-run-section');
+const aiResults = document.getElementById('ai-results') || document.getElementById('ai-action');
 
 const SAMPLE_URL = 'output3.json';
 const SAMPLE_ASSESSMENT_URL = 'output2.json';
@@ -25,6 +26,13 @@ const AI_CONFIG = {
 };
 
 let projectInfoText = '';
+
+function setAiSectionMode(mode) {
+  if (!aiRunSection || !aiResults) return;
+  const showResults = mode === 'results';
+  aiRunSection.hidden = showResults;
+  aiResults.hidden = !showResults;
+}
 
 function showBanner(message) {
   banner.textContent = message;
@@ -356,12 +364,15 @@ async function handleAiRun() {
   }
 
   const formatted = formatAiContent(content);
-  aiAction.innerHTML = '';
-  if (formatted.parsed) {
-    aiAction.appendChild(renderAssessment(formatted.parsed));
-  } else {
-    aiAction.appendChild(buildResultDetails('AI Risk Assessment Output', formatted.text));
+  if (aiResults) {
+    aiResults.innerHTML = '';
+    if (formatted.parsed) {
+      aiResults.appendChild(renderAssessment(formatted.parsed));
+    } else {
+      aiResults.appendChild(buildResultDetails('AI Risk Assessment Output', formatted.text));
+    }
   }
+  setAiSectionMode('results');
 }
 
 async function loadSampleData() {
@@ -402,6 +413,7 @@ async function init() {
       if (aiRunButton) {
         aiRunButton.addEventListener('click', handleAiRun);
       }
+      setAiSectionMode('run');
       return;
     } catch (error) {
       showBanner(`Live fetch failed. Using sample data instead. (${error.message})`);
@@ -413,10 +425,13 @@ async function init() {
     const data = await loadSampleData();
     renderProject(data);
     showBanner('Showing bundled sample data from output3.txt and a precomputed AI assessment.');
+    setAiSectionMode('results');
     try {
       const assessment = await loadSampleAssessment();
-      aiAction.innerHTML = '';
-      aiAction.appendChild(renderAssessment(assessment));
+      if (aiResults) {
+        aiResults.innerHTML = '';
+        aiResults.appendChild(renderAssessment(assessment));
+      }
       if (aiRunButton) {
         aiRunButton.remove();
       }
@@ -424,11 +439,13 @@ async function init() {
       if (aiRunButton) {
         aiRunButton.addEventListener('click', handleAiRun);
       }
+      setAiSectionMode('run');
     }
     return;
   }
 
   showBanner('No session found. Please return to login or use sample data.');
+  setAiSectionMode('run');
 }
 
 init();
