@@ -1,33 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-
-// Ensure public directory exists
-const publicDir = path.join(__dirname, '..', 'public');
-if (!fs.existsSync(publicDir)) {
-  fs.mkdirSync(publicDir, { recursive: true });
-}
-
-// Copy index.html to public directory
-const indexSource = path.join(__dirname, '..', 'index.html');
-const indexDest = path.join(publicDir, 'index.html');
-
-if (fs.existsSync(indexSource)) {
-  fs.copyFileSync(indexSource, indexDest);
-  console.log('✅ Copied index.html to public/');
-}
-
-// Copy demo project to public/demo
-const demoSource = path.join(__dirname, '..', 'demo');
-const demoDest = path.join(publicDir, 'demo');
-
-if (fs.existsSync(demoSource)) {
-    fs.rmSync(demoDest, { recursive: true, force: true });
-    fs.cpSync(demoSource, demoDest, { recursive: true });
-    console.log('✅ Copied demo/ to public/demo/');
-}
-
-// Create a simple 404 page
-const notFoundHtml = `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -81,9 +52,4 @@ const notFoundHtml = `<!DOCTYPE html>
         <a href="/">← Back to Home</a>
     </div>
 </body>
-</html>`;
-
-fs.writeFileSync(path.join(publicDir, '404.html'), notFoundHtml);
-console.log('✅ Created 404.html in public/');
-
-console.log('✅ Build complete!');
+</html>
