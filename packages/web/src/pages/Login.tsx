@@ -30,11 +30,16 @@ export default function Login() {
       return res.json();
     },
     onSuccess: () => {
+      // Store credentials in sessionStorage so DemoFull can access them
+      sessionStorage.setItem('demoFullCredentials', JSON.stringify(form));
+      sessionStorage.removeItem('demoFullSample'); // Clear sample flag
       navigate('/demo-full');
     },
   });
 
   const handleSampleData = () => {
+    sessionStorage.setItem('demoFullSample', 'true');
+    sessionStorage.removeItem('demoFullCredentials'); // Clear credentials
     navigate('/demo-full?sample=true');
   };
 
