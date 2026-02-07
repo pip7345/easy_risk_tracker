@@ -11,7 +11,7 @@ export interface AuthRequest extends Request {
 
 export function authenticate(
   req: Request,
-  res: Response,
+  _res: Response,
   next: NextFunction
 ) {
   try {

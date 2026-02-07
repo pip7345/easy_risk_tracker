@@ -33,7 +33,8 @@ router.post('/fetch', authenticate, async (req: AuthRequest, res: Response, next
       throw new ApiErrorClass('IIZR authentication failed', 401);
     }
 
-    const { token } = await loginResponse.json();
+    const loginData = await loginResponse.json() as { token: string };
+    const { token } = loginData;
 
     // Fetch project data
     const projectResponse = await fetch(
@@ -62,7 +63,7 @@ router.post('/fetch', authenticate, async (req: AuthRequest, res: Response, next
 });
 
 // Use sample data (for demo purposes)
-router.get('/sample', (req, res) => {
+router.get('/sample', (_req, res) => {
   // Return sample project data
   res.json({
     success: true,

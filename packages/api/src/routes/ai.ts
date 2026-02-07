@@ -5,10 +5,13 @@ import { ApiErrorClass } from '../middleware/errorHandler.js';
 
 const router = Router();
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
+// Initialize OpenAI client only if API key is available
+let openai: OpenAI | null = null;
+if (process.env.OPENAI_API_KEY) {
+  openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY
+  });
+}
 
 // Query AI with project data
 router.post('/query', authenticate, async (req: AuthRequest, res: Response, next) => {
@@ -26,7 +29,7 @@ router.post('/query', authenticate, async (req: AuthRequest, res: Response, next
       throw new ApiErrorClass('OpenAI API key required', 400);
     }
 
-    const client = apiKey ? new OpenAI({ apiKey }) : openai;
+    const client = apiKey ? new OpenAI({ apiKey }) : (openai || new OpenAI({ apiKey: clientApiKey }));
 
     // Construct the prompt
     const prompt = `${methodology}\n\nProject Data:\n${JSON.stringify(projectData, null, 2)}`;

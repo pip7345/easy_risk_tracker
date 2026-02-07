@@ -23,7 +23,7 @@
     },
     "test": {
       "dependsOn": ["^build"],
-      "outputs": []
+      "outputs": ["playwright-report/**", "test-results/**"]
     },
     "clean": {
       "cache": false

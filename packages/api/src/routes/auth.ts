@@ -46,7 +46,7 @@ router.post('/login', async (req: Request, res: Response, next) => {
 });
 
 // Logout endpoint
-router.post('/logout', (req: Request, res: Response) => {
+router.post('/logout', (_req: Request, res: Response) => {
   res.clearCookie('auth_token');
   res.clearCookie('iizr_creds');
   res.json({ success: true });
@@ -57,7 +57,8 @@ router.get('/status', (req: Request, res: Response) => {
   const token = req.cookies.auth_token;
   
   if (!token) {
-    return res.json({ authenticated: false });
+    res.json({ authenticated: false });
+    return;
   }
 
   res.json({ authenticated: true });
