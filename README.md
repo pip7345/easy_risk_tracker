@@ -1,6 +1,137 @@
-# Crypto Bros Platform
+# Crypto Bros Platform - Monorepo
 
-Multi-project platform featuring the Easy Risk Tracker documentation and additional sub-projects.
+Modern full-stack platform for crypto project risk assessment, featuring Easy Risk Tracker documentation and interactive demos.
+
+## 🏗️ Architecture
+
+**Monorepo Structure** powered by Turborepo:
+
+```
+deploy/
+├── packages/
+│   ├── web/          # React SPA (Vite + React Router + Tailwind)
+│   ├── api/          # Express REST API (TypeScript)
+│   ├── shared/       # Shared types and utilities
+│   └── docs/         # Docusaurus documentation
+├── package.json      # Root workspace config
+└── turbo.json        # Turborepo pipeline config
+```
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js ≥18.0.0
+- npm ≥9.0.0
+
+### Installation
+
+```bash
+# Install all dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your credentials
+```
+
+### Development
+
+```bash
+# Run all packages in dev mode (parallel)
+npm run dev
+
+# Access points:
+# - Frontend: http://localhost:5173
+# - API: http://localhost:3000
+# - Docs: http://localhost:3001
+```
+
+### Production Build
+
+```bash
+# Build all packages
+npm run build
+
+# Start production server
+npm start
+```
+
+## 📦 Packages
+
+### `packages/web`
+React single-page application with:
+- **Vite** - Fast build tool and dev server
+- **React Router** - Client-side routing
+- **TanStack Query** - Data fetching and caching
+- **Tailwind CSS** - Utility-first styling
+- **TypeScript** - Type safety
+
+### `packages/api`
+Express REST API with:
+- **TypeScript** - Full type safety
+- **JWT Authentication** - Secure auth with httpOnly cookies
+- **CORS** - Configured for local and production
+- **Routes**: `/api/auth`, `/api/projects`, `/api/ai`
+
+### `packages/shared`
+Shared code between web and api:
+- TypeScript types and interfaces
+- Validation schemas
+- Constants and utilities
+
+### `packages/docs`
+Docusaurus documentation site for Easy Risk Tracker methodology.
+
+## 🛠️ Key Technologies
+
+- **Monorepo**: Turborepo
+- **Frontend**: React 18, Vite, Tailwind CSS
+- **Backend**: Node.js, Express, TypeScript
+- **Data Fetching**: TanStack Query (React Query)
+- **Auth**: JWT with httpOnly cookies
+- **Documentation**: Docusaurus
+- **Type Safety**: TypeScript across all packages
+
+## 🔐 Environment Variables
+
+See `.env.example` for all configuration options.
+
+## 📝 Scripts
+
+```bash
+npm run dev          # Start all packages in dev mode
+npm run build        # Build all packages
+npm start            # Start production server
+npm run clean        # Clean build artifacts
+npm run lint         # Lint all packages
+npm run type-check   # TypeScript type checking
+```
+
+## 🚢 Deployment
+
+The monorepo is optimized for deployment on platforms like Render, Vercel, or Railway:
+
+1. **Build**: `npm run build`
+2. **Start**: `npm start`
+3. Set environment variables on your platform
+
+## 📖 Documentation
+
+Visit `/docs` route for complete Easy Risk Tracker methodology and scoring documentation.
+
+## 🏛️ Migration from Legacy
+
+This replaces the previous static HTML setup with a modern React-based architecture while preserving all functionality:
+
+- ✅ All demo features migrated to React components
+- ✅ API endpoints replace client-side fetch logic
+- ✅ Type-safe communication between frontend/backend
+- ✅ Improved developer experience with HMR
+- ✅ Better code organization and maintainability
+
+## 📄 License
+
+MIT
 
 ## 🚀 Deployment on Render
 

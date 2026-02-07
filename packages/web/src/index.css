@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top, rgba(124, 58, 237, 0.2), transparent 50%),
+    linear-gradient(160deg, #0b1120, #0f172a 45%, #020617);
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-semibold transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply btn bg-accent text-gray-900 hover:bg-sky-400 hover:shadow-lg hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-transparent text-text border border-border hover:bg-surface;
+  }
+  
+  .card {
+    @apply bg-gradient-to-br from-card/95 to-surface/90 border border-border rounded-2xl p-6 shadow-2xl shadow-surface/50;
+  }
+  
+  .input {
+    @apply bg-surface/80 border border-border rounded-lg text-text px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+}

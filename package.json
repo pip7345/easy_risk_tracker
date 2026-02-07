@@ -1,30 +1,34 @@
 {
-  "name": "crypto-bros-platform",
-  "version": "1.0.0",
-  "description": "Multi-project platform with Easy Risk Tracker documentation and sub-projects",
-  "main": "server.js",
+  "name": "crypto-bros-monorepo",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Crypto Bros Platform - Modern Monorepo with React, Node.js, and Docusaurus",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "build": "npm run build:docs && npm run build:public",
-    "build:docs": "cd docs && npm run build",
-    "build:public": "node scripts/build-public.js",
-    "start": "node server.js",
-    "dev": "node server.js",
-    "postinstall": "cd docs && npm install"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "clean": "turbo run clean",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "type-check": "turbo run type-check"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   },
   "keywords": [
     "crypto",
     "risk-assessment",
-    "docusaurus"
+    "monorepo",
+    "react",
+    "typescript"
   ],
   "author": "Crypto Bros",
-  "license": "MIT",
-  "dependencies": {
-    "compression": "^1.7.4",
-    "dotenv": "^17.2.4",
-    "express": "^4.18.2",
-    "serve-static": "^1.15.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  }
+  "license": "MIT"
 }
