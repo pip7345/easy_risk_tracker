@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Full - Bellator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">iiZR</div>
+        <div>
+          <strong>Investment Made Easy</strong>
+          <div><span>Demo Full</span></div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="active" href="render.html">Projects</a>
+        <a href="#">Easy Risk Tracker</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Subscriptions</a>
+        <a href="#">Referrals</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div>Signed in as <span id="user-email">demo</span></div>
+        <a href="index.html" class="button secondary">Back to Login</a>
+      </div>
+    </aside>
+
+    <div>
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span>Home</span>
+          <span>›</span>
+          <span>Projects</span>
+          <span>›</span>
+          <strong id="project-name">Bellator</strong>
+        </div>
+        <div class="action-buttons">
+          <a class="button secondary" id="website-link" href="#" target="_blank" rel="noopener noreferrer">Website</a>
+          <a class="button ghost" id="join-link" href="#" target="_blank" rel="noopener noreferrer">Join Project</a>
+        </div>
+      </header>
+
+      <main class="container">
+        <div id="banner" class="notice" hidden></div>
+
+        <section class="card hero">
+          <div>
+            <h1 class="title" id="hero-title">Bellator</h1>
+            <p class="subtitle" id="hero-description">Loading project details...</p>
+            <div class="tags" id="tag-list"></div>
+            <div class="update-actions" id="social-links"></div>
+          </div>
+          <div>
+            <img class="hero-logo" id="hero-logo" alt="Project logo" />
+            <div class="stats">
+              <div class="stat">
+                <h3 id="update-count">0</h3>
+                <span>Updates</span>
+              </div>
+              <div class="stat">
+                <h3 id="reaction-count">0</h3>
+                <span>Total reactions</span>
+              </div>
+              <div class="stat">
+                <h3 id="last-updated">-</h3>
+                <span>Last published</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <h2 class="section-title">Latest Updates</h2>
+        <section class="grid" id="updates-list"></section>
+      </main>
+    </div>
+  </div>
+
+  <script src="api.js"></script>
+  <script src="render.js"></script>
+</body>
+</html>

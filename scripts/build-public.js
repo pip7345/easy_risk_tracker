@@ -26,6 +26,16 @@ if (fs.existsSync(demoSource)) {
     console.log('✅ Copied demo/ to public/demo/');
 }
 
+// Copy demo_full project to public/demo_full
+const demoFullSource = path.join(__dirname, '..', 'demo_full');
+const demoFullDest = path.join(publicDir, 'demo_full');
+
+if (fs.existsSync(demoFullSource)) {
+    fs.rmSync(demoFullDest, { recursive: true, force: true });
+    fs.cpSync(demoFullSource, demoFullDest, { recursive: true });
+    console.log('✅ Copied demo_full/ to public/demo_full/');
+}
+
 // Create a simple 404 page
 const notFoundHtml = `<!DOCTYPE html>
 <html lang="en">
