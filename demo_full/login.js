@@ -20,10 +20,11 @@ form.addEventListener('submit', async (event) => {
 
   const email = document.getElementById('email').value.trim();
   const password = document.getElementById('password').value;
+  const apiKey = document.getElementById('api-key').value.trim();
   const projectId = document.getElementById('project-id').value.trim();
 
   try {
-    const payload = { email, password, projectId };
+    const payload = { email, password, apiKey, projectId };
     sessionStorage.setItem('demoFullCredentials', JSON.stringify(payload));
     sessionStorage.removeItem('demoFullSample');
     window.location.href = 'render.html';

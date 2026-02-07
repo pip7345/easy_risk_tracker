@@ -162,6 +162,27 @@ a {
   cursor: not-allowed;
 }
 
+.spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(8, 47, 73, 0.3);
+  border-top-color: #082f49;
+  display: inline-block;
+  animation: spin 0.9s linear infinite;
+}
+
+.button .spinner {
+  border-color: rgba(2, 6, 23, 0.25);
+  border-top-color: #0f172a;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .button:hover:not(:disabled) {
   transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(56, 189, 248, 0.25);
@@ -250,6 +271,105 @@ a {
 .section-title {
   margin: 32px 0 16px;
   font-size: 20px;
+}
+
+.ai-card {
+  display: grid;
+  gap: 16px;
+}
+
+.ai-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ai-result details {
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(2, 6, 23, 0.4);
+  padding: 16px;
+}
+
+.ai-result summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ai-result summary::-webkit-details-marker {
+  display: none;
+}
+
+.ai-result pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 13px;
+  color: #cbd5f5;
+  margin: 16px 0 0;
+}
+
+.ai-metrics {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.ai-metrics table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.ai-metrics th,
+.ai-metrics td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.ai-metrics th {
+  color: var(--muted);
+  font-weight: 600;
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.ai-metrics ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #dbeafe;
+}
+
+.ai-metrics li {
+  margin-bottom: 8px;
+}
+
+.ai-notes details {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.6);
+  padding: 14px 16px;
+}
+
+.ai-notes summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+}
+
+.ai-notes summary::-webkit-details-marker {
+  display: none;
+}
+
+.ai-notes p {
+  margin: 12px 0 0;
+  color: #cbd5f5;
+  white-space: pre-wrap;
 }
 
 .update-card {

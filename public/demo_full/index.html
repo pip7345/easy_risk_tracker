@@ -20,12 +20,17 @@
       <form id="login-form" class="form-grid">
         <label>
           iiZR Email
-          <input type="email" id="email" required placeholder="name@example.com" />
+          <input type="email" id="email" required placeholder="name@example.com" value="__IIZR_EMAIL__" />
         </label>
 
         <label>
           iiZR Password
-          <input type="password" id="password" required placeholder="••••••••" />
+          <input type="password" id="password" required placeholder="••••••••" value="__IIZR_PASSWORD__" />
+        </label>
+
+        <label>
+          OpenAI API Key
+          <input type="password" id="api-key" required placeholder="sk-proj-" value="__OPENAI_API_KEY__" />
         </label>
 
         <label>

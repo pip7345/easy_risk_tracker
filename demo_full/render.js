@@ -12,8 +12,19 @@ const projectName = document.getElementById('project-name');
 const websiteLink = document.getElementById('website-link');
 const joinLink = document.getElementById('join-link');
 const userEmail = document.getElementById('user-email');
+const aiRunButton = document.getElementById('ai-run');
+const aiAction = document.getElementById('ai-action');
 
 const SAMPLE_URL = 'output3.json';
+const SAMPLE_ASSESSMENT_URL = 'output2.json';
+const AI_CONFIG = {
+  apiUrl: 'https://api.openai.com/v1/chat/completions',
+  model: 'gpt-5.2',
+  temperature: 0.2,
+  maxTokens: 1800,
+};
+
+let projectInfoText = '';
 
 function showBanner(message) {
   banner.textContent = message;
@@ -189,6 +200,8 @@ function renderProject(data) {
   const updates = normalizeArray(data.project_updates);
   renderStats(data, updates);
 
+  projectInfoText = JSON.stringify(data, null, 2);
+
   updatesList.innerHTML = '';
   if (updates.length === 0) {
     const empty = document.createElement('div');
@@ -201,10 +214,168 @@ function renderProject(data) {
   updates.forEach(update => updatesList.appendChild(renderUpdate(update)));
 }
 
+function buildResultDetails(title, bodyText) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'ai-result';
+
+  const details = document.createElement('details');
+  details.open = true;
+
+  const summary = document.createElement('summary');
+  summary.textContent = title;
+
+  const pre = document.createElement('pre');
+  pre.textContent = bodyText;
+
+  details.appendChild(summary);
+  details.appendChild(pre);
+  wrapper.appendChild(details);
+  return wrapper;
+}
+
+function renderAssessment(parsed) {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'ai-result';
+
+  const header = document.createElement('div');
+  header.className = 'update-header';
+
+  const title = document.createElement('div');
+  title.innerHTML = `
+    <h3 class="update-title">Risk Assessment</h3>
+    <div class="update-meta">
+      <span>Final score: ${parsed.final_score ?? 'N/A'}</span>
+      <span>Risk tier: ${parsed.risk_tier ?? 'N/A'}</span>
+    </div>
+  `;
+
+  header.appendChild(title);
+  wrapper.appendChild(header);
+
+  const metrics = document.createElement('div');
+  metrics.className = 'ai-metrics';
+
+  const scoreTable = document.createElement('table');
+  const scoreHead = document.createElement('thead');
+  scoreHead.innerHTML = '<tr><th>Category</th><th>Score</th></tr>';
+  scoreTable.appendChild(scoreHead);
+
+  const scoreBody = document.createElement('tbody');
+  const categoryScores = parsed.category_scores || {};
+  Object.entries(categoryScores).forEach(([key, value]) => {
+    const row = document.createElement('tr');
+    const name = key.replace(/_/g, ' ');
+    row.innerHTML = `<td>${name}</td><td>${value}</td>`;
+    scoreBody.appendChild(row);
+  });
+  scoreTable.appendChild(scoreBody);
+  metrics.appendChild(scoreTable);
+
+  const flagsWrapper = document.createElement('div');
+  const flagsTitle = document.createElement('h4');
+  flagsTitle.textContent = 'Red Flags Triggered';
+  flagsWrapper.appendChild(flagsTitle);
+
+  const flagsList = document.createElement('ul');
+  (parsed.red_flags_triggered || []).forEach(flag => {
+    const item = document.createElement('li');
+    item.textContent = flag;
+    flagsList.appendChild(item);
+  });
+  if (!flagsList.childElementCount) {
+    const empty = document.createElement('li');
+    empty.textContent = 'No red flags reported.';
+    flagsList.appendChild(empty);
+  }
+  flagsWrapper.appendChild(flagsList);
+  metrics.appendChild(flagsWrapper);
+
+  wrapper.appendChild(metrics);
+
+  const notesWrapper = document.createElement('div');
+  notesWrapper.className = 'ai-notes';
+  const notesDetails = document.createElement('details');
+  notesDetails.open = false;
+  const notesSummary = document.createElement('summary');
+  notesSummary.textContent = 'Analyst Notes';
+  const notesBody = document.createElement('p');
+  notesBody.textContent = parsed.notes || 'No notes provided.';
+  notesDetails.appendChild(notesSummary);
+  notesDetails.appendChild(notesBody);
+  notesWrapper.appendChild(notesDetails);
+  wrapper.appendChild(notesWrapper);
+
+  return wrapper;
+}
+
+function formatAiContent(content) {
+  if (!content) return { parsed: null, text: 'No AI output returned.' };
+  try {
+    const parsed = typeof content === 'string' ? JSON.parse(content) : content;
+    return { parsed, text: JSON.stringify(parsed, null, 2) };
+  } catch (error) {
+    return { parsed: null, text: content };
+  }
+}
+
+async function handleAiRun() {
+  if (!aiRunButton) {
+    return;
+  }
+  if (!projectInfoText) {
+    showBanner('Project data is required before running the AI assessment.');
+    return;
+  }
+
+  const storedCredentials = sessionStorage.getItem('demoFullCredentials');
+  const creds = storedCredentials ? JSON.parse(storedCredentials) : null;
+  const apiKey = creds?.apiKey?.trim();
+
+  if (!apiKey) {
+    showBanner('Missing API key. Return to login to enter your OpenAI API key.');
+    return;
+  }
+
+  aiRunButton.disabled = true;
+  aiRunButton.innerHTML = '<span class="spinner" aria-hidden="true"></span> Running AI Risk Assessment';
+
+  const { content, error } = await window.aiQueryApi.runAiQuery({
+    apiUrl: AI_CONFIG.apiUrl,
+    apiKey,
+    model: AI_CONFIG.model,
+    temperature: AI_CONFIG.temperature,
+    maxTokens: AI_CONFIG.maxTokens,
+    projectInfoText,
+  });
+
+  if (error) {
+    aiRunButton.disabled = false;
+    aiRunButton.textContent = 'Run AI Risk Assessment';
+    showBanner(`AI query failed: ${error}`);
+    return;
+  }
+
+  const formatted = formatAiContent(content);
+  aiAction.innerHTML = '';
+  if (formatted.parsed) {
+    aiAction.appendChild(renderAssessment(formatted.parsed));
+  } else {
+    aiAction.appendChild(buildResultDetails('AI Risk Assessment Output', formatted.text));
+  }
+}
+
 async function loadSampleData() {
   const response = await fetch(SAMPLE_URL);
   if (!response.ok) {
     throw new Error('Unable to load sample data.');
+  }
+  return response.json();
+}
+
+async function loadSampleAssessment() {
+  const response = await fetch(SAMPLE_ASSESSMENT_URL);
+  if (!response.ok) {
+    throw new Error('Unable to load sample assessment.');
   }
   return response.json();
 }
@@ -218,12 +389,19 @@ async function init() {
   const storedCredentials = sessionStorage.getItem('demoFullCredentials');
   const isSample = sampleParam || sessionStorage.getItem('demoFullSample');
 
+  if (isSample) {
+    sessionStorage.removeItem('demoFullCredentials');
+  }
+
   if (storedCredentials) {
     try {
       const creds = JSON.parse(storedCredentials);
       userEmail.textContent = creds.email || 'user';
       const data = await loadLiveData(creds);
       renderProject(data);
+      if (aiRunButton) {
+        aiRunButton.addEventListener('click', handleAiRun);
+      }
       return;
     } catch (error) {
       showBanner(`Live fetch failed. Using sample data instead. (${error.message})`);
@@ -234,7 +412,19 @@ async function init() {
     userEmail.textContent = 'sample';
     const data = await loadSampleData();
     renderProject(data);
-    showBanner('Showing bundled sample data from output3.txt.');
+    showBanner('Showing bundled sample data from output3.txt and a precomputed AI assessment.');
+    try {
+      const assessment = await loadSampleAssessment();
+      aiAction.innerHTML = '';
+      aiAction.appendChild(renderAssessment(assessment));
+      if (aiRunButton) {
+        aiRunButton.remove();
+      }
+    } catch (error) {
+      if (aiRunButton) {
+        aiRunButton.addEventListener('click', handleAiRun);
+      }
+    }
     return;
   }
 
