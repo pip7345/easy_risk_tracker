@@ -1,0 +1,12 @@
+# Render Blueprint for Multi-Project Platform
+services:
+  - type: web
+    name: crypto-bros-platform
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    # Auto-deploy on push to main branch
+    autoDeploy: true

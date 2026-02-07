@@ -1,0 +1,19 @@
+{
+  "git": {
+    "message": "✅ Restructured deploy folder for Render deployment with Node.js\n\nChanges:\n- Added root package.json with Express server\n- Created server.js to serve static files and docs\n- Added render.yaml for automatic Render deployment\n- Created build scripts for automated deployment\n- Added proper .gitignore\n- Removed PowerShell scripts (not needed for Render)\n\nStructure:\n- / → Landing page (public/index.html)\n- /docs/ → Docusaurus documentation\n- /[project]/ → Future sub-projects\n\nDeployment: Push to GitHub and connect to Render"
+  },
+  "structure": {
+    "description": "Multi-project platform ready for Render deployment",
+    "routes": {
+      "/": "Landing page with links to all projects",
+      "/docs/": "Easy Risk Tracker Docusaurus documentation",
+      "/[project-name]/": "Your sub-projects (add folders as needed)"
+    },
+    "commands": {
+      "npm install": "Install dependencies",
+      "npm run build": "Build all projects (docs + public assets)",
+      "npm start": "Start production server",
+      "npm run dev": "Start development server"
+    }
+  }
+}

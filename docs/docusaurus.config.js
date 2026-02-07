@@ -9,7 +9,7 @@ const config = {
   tagline: 'Comprehensive Cryptocurrency Project Risk Assessment',
   favicon: 'img/favicon.ico',
   url: 'https://easy-risk-tracker.example.com',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   organizationName: 'crypto_bros',
   projectName: 'easy-risk-tracker',
   onBrokenLinks: 'throw',
