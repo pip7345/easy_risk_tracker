@@ -3,8 +3,9 @@ services:
   - type: web
     name: crypto-bros-platform
     env: node
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    rootDir: deploy
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: node packages/api/dist/index.js
     envVars:
       - key: NODE_ENV
         value: production

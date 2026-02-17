@@ -146,12 +146,15 @@ This project is configured for automatic deployment on [Render](https://render.c
 
 ### Manual Setup on Render
 
-If not using the blueprint:
+If not using the blueprint (recommended: Web Service, not Static Site):
 
-1. **Create New Web Service**
-2. **Build Command:** `npm install && npm run build`
-3. **Start Command:** `npm start`
-4. **Environment:** Node
+1. **Create New Web Service** (Runtime: Node)
+2. **Root Directory:** `deploy`
+3. **Build Command:** `npm install && npm run build`
+4. **Start Command:** `node packages/api/dist/index.js`
+5. **Environment Variables:** set `NODE_ENV=production`
+
+Note: The API server serves the built web app and docs in production.
 
 ## 📁 Project Structure
 
