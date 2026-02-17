@@ -91,29 +91,32 @@ app.use('/api/projects', projectRoutes);
 app.use('/api/ai', aiRoutes);
 
 // Legacy route redirects for old static HTML paths (before catch-all handlers)
-app.get('/demo_full', (_req, res) => {
-  res.redirect(301, process.env.NODE_ENV === 'development' 
-    ? 'http://localhost:5173/demo-full' 
-    : '/demo-full');
-});
+// In development, redirect to the Vite dev server.
+// In production, avoid redirects that can loop; only canonicalize trailing slashes.
+if (!isProduction) {
+  app.get('/demo_full', (_req, res) => {
+    res.redirect(301, 'http://localhost:5173/demo-full');
+  });
 
-app.get('/demo_full/', (_req, res) => {
-  res.redirect(301, process.env.NODE_ENV === 'development' 
-    ? 'http://localhost:5173/demo-full' 
-    : '/demo-full');
-});
+  app.get('/demo_full/', (_req, res) => {
+    res.redirect(301, 'http://localhost:5173/demo-full');
+  });
 
-app.get('/demo', (_req, res) => {
-  res.redirect(301, process.env.NODE_ENV === 'development' 
-    ? 'http://localhost:5173/demo' 
-    : '/demo');
-});
+  app.get('/demo', (_req, res) => {
+    res.redirect(301, 'http://localhost:5173/demo');
+  });
 
-app.get('/demo/', (_req, res) => {
-  res.redirect(301, process.env.NODE_ENV === 'development' 
-    ? 'http://localhost:5173/demo' 
-    : '/demo');
-});
+  app.get('/demo/', (_req, res) => {
+    res.redirect(301, 'http://localhost:5173/demo');
+  });
+} else {
+  // Old underscore route -> new hyphen route
+  app.get('/demo_full', (_req, res) => res.redirect(301, '/demo-full'));
+  app.get('/demo_full/', (_req, res) => res.redirect(301, '/demo-full'));
+
+  // Canonicalize trailing slash for demo
+  app.get('/demo/', (_req, res) => res.redirect(301, '/demo'));
+}
 
 if (!isProduction) {
   app.get('/login', (_req, res) => {
