@@ -15,6 +15,10 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
+const isProduction = process.env.NODE_ENV === 'production';
+const webDistPath = path.join(__dirname, '../../web/dist');
+const docsDistPath = path.join(__dirname, '../../docs/build');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -34,8 +38,33 @@ app.use(cors({
   credentials: true
 }));
 
-// Root route - API info
+// Root route
+// - In production, serve the built React SPA (same UX as localhost:5173)
+// - In development, return API info JSON
 app.get('/', (_req, res) => {
+  if (isProduction) {
+    res.sendFile(path.join(webDistPath, 'index.html'));
+    return;
+  }
+
+  res.json({
+    name: 'Crypto Bros Platform API',
+    version: '2.0.0',
+    status: 'running',
+    endpoints: {
+      health: '/api/health',
+      info: '/api',
+      auth: '/api/auth/*',
+      projects: '/api/projects/*',
+      ai: '/api/ai/*'
+    },
+    frontend: 'http://localhost:5173',
+    docs: 'http://localhost:3001/docs/'
+  });
+});
+
+// API info (always available)
+app.get('/api', (_req, res) => {
   res.json({
     name: 'Crypto Bros Platform API',
     version: '2.0.0',
@@ -46,12 +75,8 @@ app.get('/', (_req, res) => {
       projects: '/api/projects/*',
       ai: '/api/ai/*'
     },
-    frontend: process.env.NODE_ENV === 'development' 
-      ? 'http://localhost:5173' 
-      : 'Same origin',
-    docs: process.env.NODE_ENV === 'development'
-      ? 'http://localhost:3001/docs/'
-      : '/docs'
+    frontend: isProduction ? 'Same origin' : 'http://localhost:5173',
+    docs: isProduction ? '/docs' : 'http://localhost:3001/docs/'
   });
 });
 
@@ -90,17 +115,14 @@ app.get('/demo/', (_req, res) => {
     : '/demo');
 });
 
-app.get('/login', (_req, res) => {
-  res.redirect(301, process.env.NODE_ENV === 'development' 
-    ? 'http://localhost:5173/login' 
-    : '/login');
-});
+if (!isProduction) {
+  app.get('/login', (_req, res) => {
+    res.redirect(301, 'http://localhost:5173/login');
+  });
+}
 
 // Serve static frontend in production
-if (process.env.NODE_ENV === 'production') {
-  const webDistPath = path.join(__dirname, '../../web/dist');
-  const docsDistPath = path.join(__dirname, '../../docs/build');
-  
+if (isProduction) {
   // Serve docs at /docs
   app.use('/docs', express.static(docsDistPath));
   
