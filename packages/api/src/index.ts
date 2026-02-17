@@ -115,7 +115,7 @@ if (!isProduction) {
   app.get('/demo_full/', (_req, res) => res.redirect(301, '/demo-full'));
 
   // Canonicalize trailing slash for demo
-  app.get('/demo/', (_req, res) => res.redirect(301, '/demo'));
+  app.get(/^\/demo\/+$/, (_req, res) => res.redirect(301, '/demo'));
 }
 
 if (!isProduction) {
