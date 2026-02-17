@@ -12,7 +12,7 @@ interface LoginForm {
 export default function Login() {
   const navigate = useNavigate();
   const [form, setForm] = useState<LoginForm>({
-    email: '',
+    email: 'pip7345@yahoo.com',
     password: '',
     projectId: 'bd77a557-86fd-4974-8457-f46d2fd3cb67',
     apiKey: '',

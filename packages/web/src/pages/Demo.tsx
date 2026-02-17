@@ -3,7 +3,7 @@ import { useMutation } from '@tanstack/react-query';
 import { METHODOLOGY_TEXT } from '../utils/methodology';
 
 export default function Demo() {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState('pip7345@yahoo.com');
   const [password, setPassword] = useState('');
   const [projectId, setProjectId] = useState('bd77a557-86fd-4974-8457-f46d2fd3cb67');
   const [apiKey, setApiKey] = useState('');

@@ -24,7 +24,7 @@ export default function Home() {
         <Link to="/demo" className="card hover:-translate-y-1 transition-transform">
           <h2 className="text-xl font-bold mb-2">🎮 Simple Demo</h2>
           <p className="text-sm text-muted mb-3">
-            Fetch project data from iiZR and run AI risk assessments.
+            Engineering tool that contains enough details to implement on iiZR.
           </p>
           <span className="inline-block px-3 py-1 rounded-full bg-surface text-muted text-xs">
             Interactive
@@ -34,7 +34,7 @@ export default function Home() {
         <Link to="/demo-full" className="card hover:-translate-y-1 transition-transform">
           <h2 className="text-xl font-bold mb-2">🚀 Full Demo</h2>
           <p className="text-sm text-muted mb-3">
-            Complete project analysis dashboard with advanced features and visualizations.
+            Not working yet.
           </p>
           <span className="inline-block px-3 py-1 rounded-full bg-primary-soft text-primary text-xs font-semibold">
             Premium
