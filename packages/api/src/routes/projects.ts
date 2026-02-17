@@ -23,40 +23,47 @@ router.post('/fetch', authenticate, async (req: AuthRequest, res: Response, next
 
     // Fetch from IIZR API
     // This is the logic from project-fetch.js migrated to backend
-    const loginResponse = await fetch('https://api.iizr.co/api/auth/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
-    });
+    try {
+      const loginResponse = await fetch('https://api.iizr.co/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
 
-    if (!loginResponse.ok) {
-      throw new ApiErrorClass('IIZR authentication failed', 401);
-    }
-
-    const loginData = await loginResponse.json() as { token: string };
-    const { token } = loginData;
-
-    // Fetch project data
-    const projectResponse = await fetch(
-      `https://api.iizr.co/api/projects/${projectId}`,
-      {
-        headers: { 
-          'Authorization': `Bearer ${token}`,
-          'Content-Type': 'application/json'
-        }
+      if (!loginResponse.ok) {
+        throw new ApiErrorClass('IIZR authentication failed. Please check your credentials.', 401);
       }
-    );
 
-    if (!projectResponse.ok) {
-      throw new ApiErrorClass('Failed to fetch project data', 400);
+      const loginData = await loginResponse.json() as { token: string };
+      const { token } = loginData;
+
+      // Fetch project data
+      const projectResponse = await fetch(
+        `https://api.iizr.co/api/projects/${projectId}`,
+        {
+          headers: { 
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      if (!projectResponse.ok) {
+        throw new ApiErrorClass('Failed to fetch project data from IIZR', 400);
+      }
+
+      const projectData = await projectResponse.json();
+
+      res.json({
+        success: true,
+        project: projectData
+      });
+    } catch (error: any) {
+      if (error.cause?.code === 'ENOTFOUND' || error.code === 'ENOTFOUND') {
+        throw new ApiErrorClass('Unable to reach IIZR API (api.iizr.co). Please check your internet connection or use sample data.', 503);
+      }
+      throw error;
     }
-
-    const projectData = await projectResponse.json();
-
-    res.json({
-      success: true,
-      project: projectData
-    });
   } catch (error) {
     next(error);
   }

@@ -24,6 +24,26 @@ export default function DemoFull() {
   const useSample = searchParams.get('sample') === 'true';
   const [projectData, setProjectData] = useState<ProjectData | null>(null);
   const [userEmail, setUserEmail] = useState('');
+  const [aiResult, setAiResult] = useState<any>(null);
+
+  // Load demo-full styles
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/demo-full-styles.css';
+    document.head.appendChild(link);
+    
+    // Load project-fetch.js script
+    const script = document.createElement('script');
+    script.src = '/project-fetch.js';
+    script.async = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      document.head.removeChild(link);
+      document.body.removeChild(script);
+    };
+  }, []);
 
   // Check if user is authenticated
   const { data: authStatus } = useQuery({
@@ -52,51 +72,122 @@ export default function DemoFull() {
     }
   }, [authStatus, useSample, navigate]);
 
-  const loadSampleData = () => {
+  const loadSampleData = async () => {
     setUserEmail('demo@example.com');
-    setProjectData({
-      id: 'sample',
-      name: 'Bellator',
-      description: 'Sample project data for demonstration purposes',
-      website: 'https://example.com',
-      joinLink: 'https://example.com/join',
-      logo: 'https://via.placeholder.com/200',
-      tags: ['DeFi', 'Gaming', 'NFT'],
-      stats: {
-        updateCount: 12,
-        reactionCount: 145,
-        lastUpdated: '2 days ago'
-      },
-      updates: [
-        {
-          id: '1',
-          title: 'Platform Launch',
-          content: 'Successfully launched the platform beta',
-          timestamp: '2024-01-15',
-          category: 'milestone'
+    
+    try {
+      // Load real sample project data from JSON file
+      const response = await fetch('/sample-project.json');
+      const data = await response.json();
+      
+      const project = data.project[0];
+      const updates = data.project_updates || [];
+      
+      setProjectData({
+        id: project.id,
+        name: project.title,
+        description: project.description,
+        website: project.website_url,
+        joinLink: project.generic_referral_link,
+        logo: project.logo_url,
+        tags: project.tags,
+        stats: {
+          updateCount: updates.length,
+          reactionCount: 0,
+          lastUpdated: updates.length > 0 ? new Date(updates[0].created_at).toLocaleDateString() : 'N/A'
         },
-        {
-          id: '2',
-          title: 'New Partnership',
-          content: 'Announced partnership with major exchange',
-          timestamp: '2024-01-10',
-          category: 'partnership'
-        }
-      ]
-    });
+        updates: updates.slice(0, 10).map((u: any) => ({
+          id: u.id,
+          title: u.title,
+          content: u.summary || u.content?.replace(/<[^>]*>/g, '').substring(0, 300) + '...',
+          timestamp: new Date(u.published_at).toLocaleDateString(),
+          category: u.content_tags?.[0] || 'Update'
+        }))
+      });
+    } catch (error) {
+      console.error('Failed to load sample data:', error);
+      // Fallback to inline data
+      setProjectData({
+        id: 'sample',
+        name: 'Bellator',
+        description: 'Sample project data for demonstration purposes. This is a comprehensive crypto gaming platform combining DeFi elements with NFT integration to create a unique ecosystem for gamers and investors.',
+        website: 'https://example.com',
+        joinLink: 'https://example.com/join',
+        logo: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"%3E%3Crect fill="%230f172a" width="200" height="200"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="system-ui" font-size="60" fill="%2338bdf8"%3EB%3C/text%3E%3C/svg%3E',
+        tags: ['DeFi', 'Gaming', 'NFT', 'Metaverse', 'Web3'],
+        stats: {
+          updateCount: 12,
+          reactionCount: 145,
+          lastUpdated: '2 days ago'
+        },
+        updates: [
+          {
+            id: '1',
+            title: 'Platform Launch',
+            content: 'Successfully launched the platform beta with over 5,000 early adopters. The community response has been overwhelming.',
+            timestamp: '2024-01-15',
+            category: 'milestone'
+          }
+        ]
+      });
+    }
   };
 
   const fetchProjectData = async (projectId: string) => {
     try {
-      const res = await fetch('/api/projects/fetch', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-        body: JSON.stringify({ projectId })
-      });
-      if (res.ok) {
-        const data = await res.json();
-        setProjectData(data.project);
+      const credentials = sessionStorage.getItem('demoFullCredentials');
+      if (!credentials) {
+        console.error('No credentials found');
+        return;
+      }
+      
+      const creds = JSON.parse(credentials);
+      
+      // Use the project-fetch.js API if available
+      if ((window as any).projectFetchApi) {
+        const jsonData = await (window as any).projectFetchApi.fetchProjectInfo({
+          email: creds.email,
+          password: creds.password,
+          projectId: creds.projectId
+        });
+        
+        const data = JSON.parse(jsonData);
+        const project = data.project[0];
+        const updates = data.project_updates || [];
+        
+        setProjectData({
+          id: project.id,
+          name: project.title,
+          description: project.description,
+          website: project.website_url,
+          joinLink: project.generic_referral_link,
+          logo: project.logo_url,
+          tags: project.tags,
+          stats: {
+            updateCount: updates.length,
+            reactionCount: data.project_reactions?.length || 0,
+            lastUpdated: updates.length > 0 ? new Date(updates[0].created_at).toLocaleDateString() : 'N/A'
+          },
+          updates: updates.slice(0, 10).map((u: any) => ({
+            id: u.id,
+            title: u.title,
+            content: u.summary || u.content?.replace(/<[^>]*>/g, '').substring(0, 300) + '...',
+            timestamp: new Date(u.published_at).toLocaleDateString(),
+            category: u.content_tags?.[0] || 'Update'
+          }))
+        });
+      } else {
+        // Fallback to API endpoint
+        const res = await fetch('/api/projects/fetch', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
+          body: JSON.stringify({ projectId })
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setProjectData(data.project);
+        }
       }
     } catch (error) {
       console.error('Failed to fetch project:', error);
@@ -120,7 +211,9 @@ export default function DemoFull() {
         })
       });
       if (!res.ok) throw new Error('AI query failed');
-      return res.json();
+      const data = await res.json();
+      setAiResult(data.result);
+      return data;
     }
   });
 
@@ -141,149 +234,178 @@ export default function DemoFull() {
   }
 
   return (
-    <div className="min-h-screen bg-surface grid" style={{ gridTemplateColumns: '260px 1fr' }}>
-      {/* Sidebar */}
-      <aside className="bg-gradient-to-b from-surface/95 to-surface/60 border-r border-border p-6 flex flex-col gap-6 sticky top-0 h-screen">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-8 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center font-bold text-white shadow-lg">
-            iiZR
-          </div>
+    <div className="page-shell">
+      <aside className="sidebar">
+        <div className="brand">
+          <div className="brand-mark">iiZR</div>
           <div>
-            <strong className="block text-sm">Investment Made Easy</strong>
-            <span className="text-xs text-muted">Demo Full</span>
+            <strong>Investment Made Easy</strong>
+            <div><span>Demo Full</span></div>
           </div>
         </div>
 
-        <nav className="flex flex-col gap-2">
-          <a className="px-4 py-2.5 rounded-lg bg-primary/15 text-text font-medium" href="#">
-            Projects
-          </a>
-          <a className="px-4 py-2.5 rounded-lg text-muted hover:bg-surface hover:text-text transition-colors" href="#">
-            Easy Risk Tracker
-          </a>
-          <a className="px-4 py-2.5 rounded-lg text-muted hover:bg-surface hover:text-text transition-colors" href="#">
-            Portfolio
-          </a>
-          <a className="px-4 py-2.5 rounded-lg text-muted hover:bg-surface hover:text-text transition-colors" href="#">
-            Subscriptions
-          </a>
+        <nav className="nav">
+          <a className="active" href="#">Projects</a>
+          <a href="#">Easy Risk Tracker</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Subscriptions</a>
+          <a href="#">Referrals</a>
         </nav>
 
-        <div className="mt-auto space-y-3">
-          <div className="text-xs text-muted">
-            Signed in as <span className="text-text">{userEmail}</span>
-          </div>
-          <button onClick={handleLogout} className="btn-secondary w-full text-sm">
-            Back to Login
-          </button>
+        <div className="sidebar-footer">
+          <div>Signed in as <span>{userEmail}</span></div>
+          <button onClick={handleLogout} className="button secondary">Back to Login</button>
         </div>
       </aside>
 
-      {/* Main Content */}
       <div>
-        {/* Top Bar */}
-        <header className="flex items-center justify-between px-8 py-6 border-b border-border backdrop-blur-sm bg-surface/65 sticky top-0 z-10">
-          <div className="flex items-center gap-2 text-sm text-muted">
+        <header className="topbar">
+          <div className="breadcrumb">
             <span>Home</span>
             <span>›</span>
             <span>Projects</span>
             <span>›</span>
-            <strong className="text-text">{projectData.name}</strong>
+            <strong>{projectData.name}</strong>
           </div>
-          <div className="flex gap-3">
+          <div className="action-buttons">
             {projectData.website && (
-              <a href={projectData.website} target="_blank" rel="noopener noreferrer" className="btn-secondary text-sm">
+              <a className="button secondary" href={projectData.website} target="_blank" rel="noopener noreferrer">
                 Website
               </a>
             )}
             {projectData.joinLink && (
-              <a href={projectData.joinLink} target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">
+              <a className="button ghost" href={projectData.joinLink} target="_blank" rel="noopener noreferrer">
                 Join Project
               </a>
             )}
           </div>
         </header>
 
-        {/* Main Content Area */}
-        <main className="container max-w-7xl mx-auto px-8 py-6">
-          {/* Hero Section */}
-          <section className="card grid gap-6" style={{ gridTemplateColumns: 'minmax(0, 1fr) 280px' }}>
+        <main className="container">
+          <section className="card hero">
             <div>
-              <h1 className="text-4xl font-bold mb-3">{projectData.name}</h1>
-              <p className="text-muted leading-relaxed mb-4">{projectData.description}</p>
-              {projectData.tags && (
-                <div className="flex flex-wrap gap-2">
-                  {projectData.tags.map(tag => (
-                    <span key={tag} className="px-3 py-1 rounded-full border border-border/35 bg-surface/50 text-xs text-muted">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              )}
+              <h1 className="title">{projectData.name}</h1>
+              <p className="subtitle">{projectData.description}</p>
+              <div className="tags">
+                {projectData.tags?.map(tag => (
+                  <span key={tag} className="tag">{tag}</span>
+                ))}
+              </div>
+              <div className="update-actions">
+                {projectData.website && (
+                  <a href={projectData.website} target="_blank" rel="noopener noreferrer">
+                    🌐 Website
+                  </a>
+                )}
+              </div>
             </div>
-            <div className="space-y-4">
+            <div>
               {projectData.logo && (
-                <img src={projectData.logo} alt="Project logo" className="w-full h-44 object-cover rounded-xl border border-border" />
+                <img className="hero-logo" src={projectData.logo} alt="Project logo" />
               )}
-              <div className="space-y-3">
-                <div className="p-4 rounded-xl bg-bg/40 border border-border">
-                  <h3 className="text-2xl font-bold">{projectData.stats?.updateCount || 0}</h3>
-                  <span className="text-xs text-muted">Updates</span>
+              <div className="stats">
+                <div className="stat">
+                  <h3>{projectData.stats?.updateCount || 0}</h3>
+                  <span>Updates</span>
                 </div>
-                <div className="p-4 rounded-xl bg-bg/40 border border-border">
-                  <h3 className="text-2xl font-bold">{projectData.stats?.reactionCount || 0}</h3>
-                  <span className="text-xs text-muted">Total reactions</span>
+                <div className="stat">
+                  <h3>{projectData.stats?.reactionCount || 0}</h3>
+                  <span>Total reactions</span>
                 </div>
-                <div className="p-4 rounded-xl bg-bg/40 border border-border">
-                  <h3 className="text-lg font-bold">{projectData.stats?.lastUpdated || '-'}</h3>
-                  <span className="text-xs text-muted">Last published</span>
+                <div className="stat">
+                  <h3>{projectData.stats?.lastUpdated || '-'}</h3>
+                  <span>Last published</span>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* AI Assessment Section */}
-          <section className="card mt-6">
-            <h2 className="text-2xl font-bold mb-4">AI Risk Assessment</h2>
-            <button 
-              onClick={() => runAIAssessment.mutate()}
-              disabled={runAIAssessment.isPending}
-              className="btn-primary"
-            >
-              {runAIAssessment.isPending ? 'Running Assessment...' : 'Run AI Risk Assessment'}
-            </button>
-            
-            {runAIAssessment.data && (
-              <div className="mt-6 p-6 rounded-xl bg-surface border border-border">
-                <pre className="text-sm whitespace-pre-wrap text-muted">
-                  {JSON.stringify(runAIAssessment.data.result, null, 2)}
-                </pre>
+          <section className="card ai-card">
+            {!aiResult ? (
+              <div className="ai-action">
+                <h2 className="section-title">AI Risk Assessment</h2>
+                <button 
+                  className="button" 
+                  onClick={() => runAIAssessment.mutate()}
+                  disabled={runAIAssessment.isPending}
+                >
+                  {runAIAssessment.isPending ? 'Running Assessment...' : 'Run AI Risk Assessment'}
+                </button>
+              </div>
+            ) : (
+              <div className="ai-action">
+                <h2 className="section-title">AI Risk Assessment Results</h2>
+                <div className="ai-results">
+                  {typeof aiResult === 'object' ? (
+                    <>
+                      <div className="risk-score">
+                        <h3>Risk Score: {aiResult.final_score?.toFixed(2) || 'N/A'}</h3>
+                        <p className="risk-tier">{aiResult.risk_tier || 'Unknown'}</p>
+                      </div>
+                      
+                      {aiResult.category_scores && (
+                        <div className="category-scores">
+                          <h4>Category Scores</h4>
+                          {Object.entries(aiResult.category_scores).map(([key, value]) => (
+                            <div key={key} className="score-item">
+                              <span>{key.replace(/_/g, ' ')}</span>
+                              <span>{typeof value === 'number' ? value.toFixed(1) : String(value)}</span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      
+                      {aiResult.red_flags_triggered && aiResult.red_flags_triggered.length > 0 && (
+                        <div className="red-flags">
+                          <h4>Red Flags</h4>
+                          <ul>
+                            {aiResult.red_flags_triggered.map((flag: string, idx: number) => (
+                              <li key={idx}>{flag}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                      
+                      {aiResult.notes && (
+                        <div className="notes">
+                          <h4>Notes</h4>
+                          <p>{aiResult.notes}</p>
+                        </div>
+                      )}
+                      
+                      <button className="button secondary" onClick={() => setAiResult(null)}>
+                        Run New Assessment
+                      </button>
+                    </>
+                  ) : (
+                    <pre>{JSON.stringify(aiResult, null, 2)}</pre>
+                  )}
+                </div>
               </div>
             )}
           </section>
 
-          {/* Updates List */}
-          <h2 className="text-2xl font-bold mt-8 mb-4">Latest Updates</h2>
-          <div className="grid gap-4">
+          <h2 className="section-title">Latest Updates</h2>
+          <section className="grid">
             {projectData.updates && projectData.updates.length > 0 ? (
               projectData.updates.map(update => (
-                <div key={update.id} className="card">
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold">{update.title}</h3>
-                    <span className="px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-semibold capitalize">
-                      {update.category}
-                    </span>
+                <div key={update.id} className="card update-card">
+                  <div className="update-header">
+                    <h3>{update.title}</h3>
+                    <span className="badge">{update.category}</span>
                   </div>
-                  <p className="text-muted mb-3">{update.content}</p>
-                  <div className="text-xs text-muted">{update.timestamp}</div>
+                  <p>{update.content}</p>
+                  <div className="update-meta">
+                    <span>{update.timestamp}</span>
+                  </div>
                 </div>
               ))
             ) : (
-              <div className="card text-center text-muted py-12">
-                No updates available
+              <div className="card">
+                <p className="text-center text-muted">No updates available</p>
               </div>
             )}
-          </div>
+          </section>
         </main>
       </div>
     </div>

@@ -109,26 +109,31 @@ export default function Login() {
             Credentials are stored in session only and cleared when the tab is closed.
           </p>
 
+          <div className="p-3 rounded-lg bg-primary/10 border border-primary/30 text-sm mb-4">
+            <strong className="text-primary">Note:</strong> If you don't have iiZR credentials or the API is unavailable, 
+            click "Use Sample Data" below to see a demo with pre-loaded Bellator project data.
+          </div>
+
           <div className="flex gap-3">
             <button
-              type="submit"
-              className="btn-primary flex-1"
-              disabled={loginMutation.isPending}
-            >
-              {loginMutation.isPending ? 'Logging in...' : 'Continue to Project'}
-            </button>
-            <button
               type="button"
-              className="btn-secondary flex-1"
+              className="btn-primary flex-1"
               onClick={handleSampleData}
             >
               Use Sample Data
             </button>
+            <button
+              type="submit"
+              className="btn-secondary flex-1"
+              disabled={loginMutation.isPending}
+            >
+              {loginMutation.isPending ? 'Logging in...' : 'Continue to Project'}
+            </button>
           </div>
 
           {loginMutation.isError && (
-            <div className="text-danger text-sm">
-              Login failed. Please check your credentials.
+            <div className="p-3 rounded-lg bg-danger/10 border border-danger/30 text-sm text-danger">
+              <strong>Error:</strong> {loginMutation.error instanceof Error ? loginMutation.error.message : 'Login failed. Please check your credentials or use sample data.'}
             </div>
           )}
         </form>

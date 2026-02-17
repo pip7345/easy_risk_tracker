@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
+import { METHODOLOGY_TEXT } from '../utils/methodology';
 
 export default function Demo() {
   const [email, setEmail] = useState('');
@@ -15,7 +16,7 @@ export default function Demo() {
   const [fetchPanelOpen, setFetchPanelOpen] = useState(true);
   const [aiPanelOpen, setAiPanelOpen] = useState(true);
 
-  const methodology = `Analyze this crypto project for risk factors...`; // This would come from methodology.js
+  const methodology = METHODOLOGY_TEXT;
 
   const fetchProject = useMutation({
     mutationFn: async () => {
